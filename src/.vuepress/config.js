@@ -60,6 +60,10 @@ module.exports = {
         link: '/docs/security-model/',
       },
       {
+        text: 'Sys',
+        link: '/docs/sys/',
+      },
+      {
         text: 'Dev Docs',
         link: '/docs/developers/',
       },
@@ -71,11 +75,7 @@ module.exports = {
         text: 'Contribute',
         link: '/docs/contribute/',
       },
-      {
-        text: 'Sys',
-        link: '/docs/sys/',
-      },
- 
+
       {
         text: 'Community',
         items: [
@@ -131,6 +131,16 @@ module.exports = {
     ],
     searchPlaceholder: 'Search the docs',
     sidebar: {    
+      '/docs/sys/': [
+        [
+          '/docs/sys/',
+          'Rollup'
+        ],
+        [
+          'https://jsidhu.medium.com/the-ultimate-guide-to-rollups-f8c075571770',
+          'The Vision'
+        ],
+      ],
       '/docs/governance/': [
         [
           '/docs/governance/',
@@ -274,6 +284,16 @@ module.exports = {
           'Decentralizing Optimism'
         ]
       ],
+      '/docs/sys/': [
+        '/docs/sys/Design.md',
+        '/docs/sys/PoDA.md',
+        '/docs/sys/Pali.md',
+        '/docs/sys/Gas.md',
+        [
+          'Sys'
+        ]
+      ],
+ 
       '/docs/protocol/': [
         {
           title: 'How Optimism Works',
