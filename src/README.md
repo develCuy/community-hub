@@ -40,4 +40,11 @@ features:
     icon: hands-helping
     details: Check out the Optimism community and join the conversation.
     link: /docs/contribute/
+
+  - title: Sys 
+    icon: info-square 
+    details: Information on rollup. 
+    link: /docs/sys/
+
+
 ---

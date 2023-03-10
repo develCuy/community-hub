@@ -72,6 +72,11 @@ module.exports = {
         link: '/docs/contribute/',
       },
       {
+        text: 'Sys',
+        link: '/docs/sys/',
+      },
+ 
+      {
         text: 'Community',
         items: [
           {
