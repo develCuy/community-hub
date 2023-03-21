@@ -56,3 +56,6 @@ In addition to security, this is much better performance-wise, even considering 
 
 The final piece to understand PoDA is how the protocol removes raw data after network participants have had the opportunity to archive it. Upon receipt of a new chainlock, the protocol prunes data older than or equal to six hours of age from the time of the previous chainlock. Since the previous chainlock is effectively the guaranteed finality of the chain, we depend upon it for data removal. The age of the data is based on the time difference between the last guaranteed finality, and the median time-stamp of the block that included the data blob.
 
+### Read More
+
+[PoDA](https://docs.syscoin.org/docs/tech/poda)

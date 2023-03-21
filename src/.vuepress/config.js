@@ -134,7 +134,7 @@ module.exports = {
       '/docs/sys/': [
         [
           '/docs/sys/',
-          'Rollup'
+          'Rollux'
         ],
         [
           'https://jsidhu.medium.com/the-ultimate-guide-to-rollups-f8c075571770',
@@ -285,9 +285,9 @@ module.exports = {
         ]
       ],
       '/docs/sys/': [
+        '/docs/sys/Rollux-Intro.md',
         '/docs/sys/Design.md',
         '/docs/sys/PoDA.md',
-        '/docs/sys/Pali.md',
         '/docs/sys/Gas.md',
         [
           'Sys'
