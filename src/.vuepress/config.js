@@ -84,47 +84,34 @@ module.exports = {
             iconPrefix: 'fab fa-',
             iconClass: 'color-discord',
             text: 'Discord',
-            link: 'https://discord.optimism.io',
+            link: 'https://discord.com/invite/syscoin',
           },
           {
             icon: 'github',
             iconPrefix: 'fab fa-',
             iconClass: 'color-github',
             text: 'GitHub',
-            link: 'https://github.com/ethereum-optimism/optimism',
+            link: 'https://github.com/syscoin',
           },
           {
             icon: 'twitter',
             iconPrefix: 'fab fa-',
             iconClass: 'color-twitter',
             text: 'Twitter',
-            link: 'https://twitter.com/optimismFND',
+            link: 'https://twitter.com/syscoin',
           },
           {
-            icon: 'twitch',
+            icon: 'telegram',
             iconPrefix: 'fab fa-',
-            iconClass: 'color-twitch',
-            text: 'Twitch',
-            link: 'https://www.twitch.tv/optimismpbc'
-          },
-          {
-            icon: 'medium',
-            iconPrefix: 'fab fa-',
-            iconClass: 'color-medium',
-            text: 'Blog',
-            link: 'https://optimismpbc.medium.com/'
+            iconClass: 'color-telegram',
+            text: 'Telegram',
+            link: 'https://t.me/Syscoin_Official'
           },
           {
             icon: 'computer-classic',
             iconClass: 'color-ecosystem',
             text: 'Ecosystem',
-            link: 'https://www.optimism.io/apps/all',
-          },
-          {
-            icon: 'globe',
-            iconClass: 'color-optimism',
-            text: 'optimism.io',
-            link: 'https://www.optimism.io/',
+            link: 'https://syscoin.org/ecosystem',
           }
         ]
       }
