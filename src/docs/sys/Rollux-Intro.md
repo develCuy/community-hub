@@ -1,3 +1,10 @@
+## Rollux
+
+Although the first version of Rollux is an optimistic rollup, it has been designed to also integrate ZK-based technologies as they mature. Version 1 is a massive leap for blockchain technology, but it will only continue to evolve as new breakthroughs are discovered and applied. Syscoin has a knack for hybridizing the best of what exists, whether Bitcoin and Ethereum on our Layer 1 or optimistic and ZK-Rollups on our Layer 2. 
+
+Our EVM-compatibility means projects built for the likes of well-known networks like Ethereum or Polygon can easily be ported to Rollux to take advantage of greater speeds, superior PoW security, and cost-savings through incredibly discounted transaction fees. If your project would benefit from these traits, then we invite you to join the number of other projects already committed to building on Syscoin, who can be found at <https://syscoin.org/ecosystem>.
+
+We are excited to have you join us as we explore uncharted territory. 
 
 ## Rollux Optimistic Rollups
 
