@@ -13,4 +13,13 @@ Long ago, it seemed like madness to some people when the Syscoin project determi
 
 A combination of BLS digital signature, Zero-Knowledge, Data Availability, all combined with a PoW+PoS strategy.
 
+# Index
+
+### [Design](Design.md) 
+
+### [Finality](Finality.md) 
+
+### [Proof of Data Availability](PoDa.md) 
+
+### [Gas Usage](Gas.md) 
 
