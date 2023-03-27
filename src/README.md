@@ -10,11 +10,11 @@ features:
     icon: book
     details: How-to guides and tutorials for users and developers.
     link: /docs/guides/
-    
-  - title: How Optimism works
-    icon: info-square
-    details: General explanation of what makes Optimism tick.
-    link: /docs/protocol/2-rollup-protocol/
+
+  - title: How Rollux works 
+    icon: info-square 
+    details: What is Rollux.
+    link: /docs/sys/
 
   - title: Optimism's Security Model
     icon: shield
@@ -40,11 +40,5 @@ features:
     icon: hands-helping
     details: Check out the Optimism community and join the conversation.
     link: /docs/contribute/
-
-  - title: Sys 
-    icon: info-square 
-    details: Information on rollup. 
-    link: /docs/sys/
-
 
 ---
