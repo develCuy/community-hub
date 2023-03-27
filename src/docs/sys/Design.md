@@ -4,7 +4,7 @@ lang: en-US
 ---
 
 
-### Overall System Design
+## Overall System Design
 
 Rollux aims to take the best of Bitcoin (security through merged mining), apply finality to solve for selfish-mining, and combine all of this with the best of Ethereum (its roadmap towards modularity — Optimistic and ZK Rollups), and Syscoin’s own efficient Layer 1 data availability in the form of [PoDA (Proof-of-Data-Availability)](PoDA.md) which is a stark contrast to Ethereum’s danksharding.
 

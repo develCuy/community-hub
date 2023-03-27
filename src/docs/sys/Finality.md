@@ -4,7 +4,7 @@ lang: en-US
 ---
 
 
-### Finality - Multi-Quorum Chainlocks
+## Finality - Multi-Quorum Chainlocks
 
 Syscoin’s masternodes are validators that run as full nodes. This increases the Nakamoto Coefficient (a measurement of the degree of decentralization of disparate services/nodes). These full nodes do not trust others through consensus, rather they each reproduce their own local state in order to verify the chain. This aligns with our ideals. In contrast, things like sharding or relegating consensus to PoS do not. We are PoW at our foundation and know that in order to preserve long-term decentralized contracts with the world we must tie the computational integrity of the ledger to the tangibility of a race for physical energy extraction. Understanding that, the right questions right now are how does Syscoin’s finality work in a decentralized way, and how does it not relegate consensus into a system that is effectively PoS?
 

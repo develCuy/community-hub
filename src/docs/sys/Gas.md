@@ -3,7 +3,7 @@ title: Gas
 lang: en-US
 ---
 
-### Inherited L1 Security with L2 Variable Gas Rate Dominance
+## Inherited L1 Security with L2 Variable Gas Rate Dominance
 
 Rollups today inherit the security of the base layer (Ethereum) by paying a variable fee based on the size of the batch of transactions settling from layer 2. With PoDA integrated into Bedrock this fee falls down drastically to just 1400 gas per batch (which itself is 2MB of transactions). Since the BatchInbox smart contract can take a variable number of batches (called blobs) to verify them via the data precompile they will be negligible in the overall cost of a layer 2 transaction. The rollup sequencer may pay 2000 gas (including overhead for the contract) for every 2MB of transactions (roughly 30000 transactions at 70 bytes per L2 transaction compressed) or roughly around only 15 gas per transaction.
 
