@@ -2,7 +2,7 @@ const { description } = require('../../package')
 const path = require('path')
 
 module.exports = {
-  title: 'Optimism Docs',
+  title: 'Rollux Docs',
   description: description,
 
   head: [ 
@@ -10,7 +10,7 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/assets/logos/favicon.png"}],
+    ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "/assets/logos/icon_small.png"}],
   ],
 
 //  cache: false,
@@ -21,7 +21,7 @@ module.exports = {
     hostname: 'https://community.optimism.io',
     logo: '/assets/logos/logo.png',
     docsDir: 'src',
-    docsRepo: 'https://github.com/ethereum-optimism/community-hub',
+    docsRepo: 'https://github.com/syscoin/community-hub',
     docsBranch: 'main',
     lastUpdated: false,
     darkmode: 'disable',

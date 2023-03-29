@@ -2,8 +2,8 @@
 home: true
 icon: home
 title: Home
-heroImage: /assets/logos/header.png
-heroText: The Optimism Docs
+heroImage: /assets/logos/header-rollux.png
+heroText: The Rollux Docs
 
 features:
   - title: Quick Start
