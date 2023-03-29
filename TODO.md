@@ -9,18 +9,18 @@ Rely on design/aesthetics/format as-is for now.
 ### Todo
 
 - [ ] Add Media (Images, embedded videos)
+- [ ] Add usage tutorial/rpcs 
+- [ ] Consistent Formatting  
+- [ ] Adapt /Dev Docs/ thoroughly
+- [ ] META: Link to Syscoin docs whenever appropriate  
+- [ ] Add Remix examples to guides linking to deployed repo 
+
+### In Progress
 - [ ] Reword/review PoDA  
 - [ ] Reword/review Finality 
 - [ ] Reword/review Gas  
 - [ ] Reword/review Intro  
-- [ ] Add usage tutorial/rpcs 
-- [ ] Consistent Formatting  
 - [ ] Sys logos/media/branding 
-- [ ] Adapt /Dev Docs/ thoroughly
-- [ ] META: Link to Syscoin docs whenever appropriate  
-
-### In Progress
-
 ### Done ✓
 
 - [x] Add and clean up raw text  
