@@ -17,8 +17,8 @@
             </a>
           </li>
           <li>
-            <a href="https://github.com/ethereum-optimism/optimism/contribute" target="_blank" rel="noopener noreferrer">
-              <i class="far fa-hands-helping"></i> Contribute to Optimism
+            <a href="https://github.com/syscoin/" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i> Github 
             </a>
           </li>
         </ul>
@@ -28,13 +28,13 @@
         <span class="footer-section-header">Still need help?</span>
         <ul>
           <li>
-            <a href="https://discord.optimism.io" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-discord"></i> Discord community
+            <a href="https://syscoin.org/contact" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-discord"></i> Community
             </a>
           </li>
           <li>
-            <a href="https://oplabs.typeform.com/get-in-touch" target="_blank" rel="noopener noreferrer">
-              <i class="far fa-comment-dots"></i> Get support for going live
+            <a href="https://docs.syscoin.org/docs/intro/syscoin-what/" target="_blank" rel="noopener noreferrer">
+              <i class="far fa-hands-helping"></i> Syscoin Documentation
             </a>
           </li>
         </ul>
@@ -139,7 +139,7 @@
         font-family 'Open Sans', sans-serif
 
         &:hover
-          color #FF0420
+          color #d0ef88
 
       i
         font-size 14px
