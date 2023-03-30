@@ -8,7 +8,7 @@ Rely on design/aesthetics/format as-is for now.
 
 ### Todo
 
-- [ ] Add Media (Images, embedded videos)
+- [ ] Restyle graphs and media to be consistent with color scheme if possible
 - [ ] Add usage tutorial/rpcs 
 - [ ] Consistent Formatting  
 - [ ] Adapt /Dev Docs/ thoroughly
@@ -16,6 +16,8 @@ Rely on design/aesthetics/format as-is for now.
 - [ ] Add Remix examples to guides linking to deployed repo 
 
 ### In Progress
+
+- [ ] Add Media (Images, embedded videos)
 - [ ] Reword/review PoDA  
 - [ ] Reword/review Finality 
 - [ ] Reword/review Gas  
