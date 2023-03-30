@@ -7,7 +7,9 @@ lang: en-US
 
 The general [design](Design.md) for a layer 2 using PoDA on Syscoin layer 1 can be applied with ZK-based rollups (we have prototyped this with Hermez zkEVM) the same as we have applied with Optimism Bedrock. Since Optimistic rollups have some advantages over zkEVM right now due to the overhead of ZK proving, we chose to integrate with Bedrock to begin, and will introduce a hybrid solution likely along the lines of Bedrock/Hermez/zkSync upon emergence of hardware-efficient ZK proving solutions. We feel the Bedrock design is currently the cleanest, most secure and efficient of any of the many rollup designs today.
 
-### Add Graph Here
+<div align="center">
+<img width="800" src="../../assets/docs/sys/overall.png">
+</div>
 
 The base layer required a working mechanism for decentralized finality, hash-based blobs and an EVM that is stable and able to provide censorship resistance to rollups on layer 2 and beyond. We released finality + EVM in our NEVM release (Syscoin Core v4.3) in December 2021. To integrate PoDA, we assessed the Bedrock codebase of Optimism and created our initial integration ([see the diff](https://github.com/sidhujag/optimism) of our Tanenbaum official testnet deployment). The gist of the integration is summed as follows. This allows us to easily integrate PoDA into any rollup systematically. You can follow the graphic above with the explanation of the numbered sequences below.
 
@@ -52,7 +54,10 @@ Due to Ethereum's sharding architecture, validators hold only a fraction of the 
 
 Within ZK rollups, it is expensive to check KZG commitments directly. This is due to the number of constraints within the ZK circuit.  There is a simple way to check if two totally separate commitments map to the same data input, using the equivalence protocol. Ideally, the commitment scheme should be hash-based to avoid trusted setups and ensure quantum safety. However, most of the hash algorithms used in ZK circuits are new and completely untested in the real world (their security is not proven). Ideally, the commitment scheme should be hash-based to eliminate trusted setups and make it quantum-safe. However, most hash algorithms employed in ZK circuits are novel and untested in real-world scenarios (their security is unproven). It is likely that they would prefer to use the merkle-root SHA256 hash-based scheme, but it is incompatible with the sharding design philosophy! For Ethereum, KZG is the most efficient solution, but it comes with a trusted setup! In contrast, sharding is not a concern for Syscoin, which allows for some substantial benefits.
 
-### Add Image here, reduce wall of text.
+<div align="center">
+<img width="800" src="../../assets/docs/sys/poda.png">
+</div>
+
 
 In addition, this is also much better performance-wise, even considering that Syscoin’s full nodes check the entire set of data at every block for data availability. Syscoin provides up to 64 megabytes per block and up to 32 blobs (2 megabytes each) of space available per block (2.5 minutes on average). The blob size fits nicely within our existing fee-market on Syscoin’s native UTXO chain. We simply discount the weight of the block by 100x. That is to say a full block of 64 megabytes accounts for 640kb, leaving 360kb of effective weight in a 1MB block for regular transactions. The fee-market for blobs is discounted 100x from regular transactions, while the rest of the fee-market logic remains consistent with bitcoin mechanics tried and tested over a number of years. In Ethereum’s alternative sharded setup, 32 blobs of 2 MB each are aggregated in a KZG verification which takes roughly 3 seconds (about 2 seconds for each individual blob), while Syscoin’s Keccak-based blob takes about 1 millisecond to check. That corresponds to 2000x in performance savings (2000ms per blob vs 1ms per blob). 
 
