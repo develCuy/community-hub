@@ -1,7 +1,7 @@
 {
-  "name": "OP Docs",
-  "short_name": "OP Docs",
-  "description": "The official OP Docs",
+  "name": "The Rollux Docs",
+  "short_name": "Rollux Docs",
+  "description": "The official Rollux Documentation",
   "icons": [
     {
       "src": "/assets/logos/icon-192x192.png",
@@ -32,5 +32,5 @@
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#ff0420"
+  "theme_color": "#dbef88"
 }

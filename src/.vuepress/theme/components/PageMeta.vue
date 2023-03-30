@@ -139,7 +139,7 @@
         font-family 'Open Sans', sans-serif
 
         &:hover
-          color #d0ef88
+          color #dbef88
 
       i
         font-size 14px

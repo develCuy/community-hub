@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;0,700;1,600;1,700&display=swap');
 @import 'https://pro.fontawesome.com/releases/v5.15.4/css/all.css';
 
 main, body, html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 p {
@@ -18,7 +20,7 @@ aside.sidebar {
 
 p.sidebar-heading {
   color: #323A43 !important;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 600;
   font-size: 14px !important;
   line-height: 24px !important;
@@ -53,13 +55,13 @@ section.sidebar-group a.sidebar-link  {
 .sidebar-links:not(.sidebar-group-items) > li > a.sidebar-link.active {
   border-left-color: #F1F4F9 !important;
   background-color: #FFDBDF !important;
-  color: #FF0420 !important;
+  color: #DBEF88 !important;
 }
 
 a.sidebar-link.active {
   border-left-color: #F1F4F9 !important;
   background-color: #FFDBDF !important;
-  color: #FF0420 !important;
+  color: #DBEF88 !important;
 }
 
 h1 {
@@ -79,18 +81,27 @@ h4 {
 }
 
 h1 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-style: italic;
+  font-style: bold;
   border-bottom: none;
   color: #202327 !important;
 }
 
-h2, h3, h4 {
-  font-family: 'Rubik', sans-serif;
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  border-bottom: none;
+  color: #202327 !important;
+}
+
+h3, h4 {
+  font-family: 'Roboto', sans-serif;
   border-bottom: none;
   font-weight: 400;
 }
+
 
 #search-form {
   @media (min-width $MQNormal) {
@@ -146,7 +157,7 @@ div.nav-item span.title {
 }
 
 div.hero-info {
-  color: white;
+  color: black;
   position: absolute;
   top: 0;
   left: 0;
@@ -161,7 +172,7 @@ div.hero-info .description {
 }
 
 div.hero-info #main-title {
-  color: white !important;
+  color: black !important;
 }
 
 header.hero > img {
