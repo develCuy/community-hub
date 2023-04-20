@@ -81,7 +81,7 @@
     display inline-block
 
   .logo
-    min-width: 200px
+    min-width: 10px
     height: $navbarHeight - $navbarVerticalPadding * 2
     margin-right 0.8rem
     vertical-align top

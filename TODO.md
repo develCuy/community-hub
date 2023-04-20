@@ -13,7 +13,12 @@ Rely on design/aesthetics/format as-is for now.
 - [ ] Consistent Formatting  
 - [ ] Adapt /Dev Docs/ thoroughly
 - [ ] META: Link to Syscoin docs whenever appropriate  
-- [ ] Add Remix examples to guides linking to deployed repo 
+- [ ] Add Remix examples to guides linking to deployed repo
+
+- [ ] docs/guides/bridge-dev.md: Add correct URLs for Rollux Portal and Rollux token list repository (fork ethereum-optimism.github.io repo???)
+- [ ] biz > README.md: Create builder form (Google Forms?) that sends entries to bizdev.
+- [ ] Replace all Alchemy references with Ankr
+- [ ] useful-tools/oracles.md: Provide SupraOracles price feed contract addr on Rollux Tanenbaum
 
 ### In Progress
 
@@ -27,5 +32,5 @@ Rely on design/aesthetics/format as-is for now.
 
 - [x] Add and clean up raw text  
 - [x] Add to search (Sys tab still a placeholder)  
-- [x] Add Community Links 
-- [x] Fix broken links 
+- [X] Add Community Links 
+- [X] Fix broken links 

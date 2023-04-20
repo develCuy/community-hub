@@ -57,28 +57,28 @@ export default Vue.extend({
                             "Support"
                         ]),
                         h("div", { class: "anchor-support-links" }, [
-                            h("a", { attrs: { href: "https://discord.optimism.io", target: "_blank" } }, [
+                            h("a", { attrs: { href: "https://discord.gg/rollux", target: "_blank" } }, [
                                 h("div", [
                                     h("i", { attrs: { class: "fab fa-discord" } }),
                                     " Discord community"
                                 ])
                             ]),
-                            h("a", { attrs: { href: "https://oplabs.typeform.com/get-in-touch", target: "_blank" } }, [
+                           /* h("a", { attrs: { href: "https://oplabs.typeform.com/get-in-touch", target: "_blank" } }, [
                                 h("div", [
                                     h("i", { attrs: { class: "far fa-comment-dots" } }),
                                     " Get support for going live"
                                 ])
-                            ]),
-                            h("a", { attrs: { href: "https://github.com/ethereum-optimism/optimism/issues", target: "_blank" } }, [
+                            ]), */
+                            h("a", { attrs: { href: "https://github.com/syscoin", target: "_blank" } }, [
                                 h("div", [
                                     h("i", { attrs: { class: "fab fa-github" } }),
                                     " Make an issue on GitHub"
                                 ])
                             ]),
-                            h("a", { attrs: { href: "https://github.com/ethereum-optimism/optimism/contribute", target: "_blank" } }, [
+                            h("a", { attrs: { href: "https://github.com/syscoin", target: "_blank" } }, [
                                 h("div", [
                                     h("i", { attrs: { class: "far fa-hands-helping" } }),
-                                    " Contribute to Optimism"
+                                    " Contribute to Rollux"
                                 ])
                             ]),
                         ])

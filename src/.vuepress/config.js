@@ -60,7 +60,7 @@ module.exports = {
         link: '/docs/security-model/',
       },
       {
-        text: 'Sys',
+        text: 'Syscoin L1',
         link: '/docs/sys/',
       },
       {
@@ -84,7 +84,7 @@ module.exports = {
             iconPrefix: 'fab fa-',
             iconClass: 'color-discord',
             text: 'Discord',
-            link: 'https://discord.com/invite/syscoin',
+            link: 'https://discord.gg/rollux',
           },
           {
             icon: 'github',
@@ -98,21 +98,15 @@ module.exports = {
             iconPrefix: 'fab fa-',
             iconClass: 'color-twitter',
             text: 'Twitter',
-            link: 'https://twitter.com/syscoin',
+            link: 'https://twitter.com/RolluxL2',
           },
-          {
-            icon: 'telegram',
-            iconPrefix: 'fab fa-',
-            iconClass: 'color-telegram',
-            text: 'Telegram',
-            link: 'https://t.me/Syscoin_Official'
-          },
-          {
+        /*  {
             icon: 'computer-classic',
             iconClass: 'color-ecosystem',
             text: 'Ecosystem',
             link: 'https://syscoin.org/ecosystem',
           }
+         */ 
         ]
       }
     ],
@@ -340,8 +334,8 @@ module.exports = {
             '/docs/useful-tools/explorers.md',
             '/docs/useful-tools/providers.md',
             '/docs/useful-tools/oracles.md',
-            '/docs/useful-tools/meta-tx.md',
-            ['https://www.optimism.io/apps/tools', 'Third Party Tools'],
+            '/docs/useful-tools/meta-tx.md'
+            //['https://www.optimism.io/apps/tools', 'Third Party Tools'],
           ],
         },
         {

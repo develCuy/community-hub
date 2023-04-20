@@ -6,10 +6,10 @@ lang: en-US
 
 [Oracles](https://ethereum.org/en/developers/docs/oracles/) provide off-chain data on chain. 
 This allows code running on a blockchain to access a wide variety of information.
-For example, a [stablecoin](https://ethereum.org/en/stablecoins/) that accepts ETH as collateral needs to know the ETH/USD exchange rate:
+For example, a stablecoin that accepts SYS as collateral needs to know the SYS/USD exchange rate:
 
-- How many stablecoins can we give a user for a given amount of ETH?
-- Do we need to liquidate any deposits because they are under collateralized?
+- How many stablecoins can we give a user for a given amount of SYS?
+- Do we need to liquidate any deposits because they are under-collateralized?
 
 Different oracles have different security assumptions and different levels of decentralization.
 Usually they are either run by the organization that produces the information, or have a mechanism to reward entities that provide accurate information and penalize those that provide incorrect information.
@@ -25,10 +25,37 @@ There are two types of oracles:
    1. Double-transaction oracles, which require two transactions. 
       The first transaction is the request for information, which usually causes the oracle to emit an event that triggers some off-chain mechanism to provide the answer (through its own transaction).
       The second transaction actually reads onchain the result from the oracle and uses it.
-   1. Single-transaction oracles, which only require one transaction, such as [Chainlink's random number generator](https://docs.chain.link/docs/get-a-random-number/#request-random-values).
+   1. Single-transaction oracles, which only require one transaction.
       The way this works is that the transaction that requests the information includes a callback (address and the call data to provide it). 
       When the oracle is updated (which also happens through a transaction, but one that is not sent by the user), the oracle uses the callback to inform a contract of the result.
 
+
+## SupraOracles
+
+SupraOracles is growing fast and already supports a lot of networks, including Rollux and Syscoin. SYS Labs and Syscoin have done due diligence on Oracle providers and concluded that [SupraOracles](https://supraoracles.com) are the best to recommend, and for multiple reasons. While SupraOracles has not existed as long as ChainLink or some others, their [technology](https://supraoracles.com/whitepapers/) and approach to business are impressive.
+
+### Price Feed
+
+Rollux Tanenbaum: [`0xFe864157a6FB22E7861727eC15a61D649C0ad92c`]()
+See [market pairs](https://supraoracles.com/docs/get-started/market-pairs#syscoin-rollux-chain)
+
+Syscoin NEVM (L1) Tanenbaum: [`0x7f003178060af3904b8b70fEa066AEE28e85043E`](https://tanenbaum.io/address/0x7f003178060af3904b8b70fEa066AEE28e85043E)
+See [market pairs](https://supraoracles.com/docs/get-started/market-pairs#syscoin-chain)
+
+[Get Started with SupraOracles Price Feeds](https://supraoracles.com/docs/get-started)
+
+### Supra VRF (RNG)
+
+Rollux Tanenbaum: [`0xA983910583AB6b9C54e88D32512FF8aE0A56A025`](https://rollux.tanenbaum.io/address/0xA983910583AB6b9C54e88D32512FF8aE0A56A025)
+
+[Get Started with Supra VRF](https://supraoracles.com/docs/vrf1)
+
+### SNAP (Supra Network Activate Program)
+
+Apply for entry into the [Supra Network Activate Program (SNAP)](https://supraoracles.com/docs/supra-network-activate-program-snap) for subsidized and heavily discounted oracle and VRF/RNG services.
+
+
+<!---
 ## Gas Oracle
 
 Optimism provides a [Gas Price Oracle](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L2/predeploys/OVM_GasPriceOracle.sol) that provides information about [gas prices and related parameters](../developers/build/transaction-fees.md).
@@ -116,3 +143,6 @@ To use Uniswap as an Oracle:
       | Pool fee            | The pool fee percentage times ten thousand. For example, for 0.3% enter `3000` |
 
 1. In your contract, use [IUniswapV3PoolState](https://github.com/Uniswap/v3-core/blob/main/contracts/interfaces/pool/IUniswapV3PoolState.sol) and [IUniswapV3PoolDerivedState](https://github.com/Uniswap/v3-core/blob/main/contracts/interfaces/pool/IUniswapV3PoolDerivedState.sol) to get the pool state.
+
+
+-->
