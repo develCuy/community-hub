@@ -3,6 +3,9 @@ title: Monitoring
 lang: en-US
 ---
 
+## Coming Soon
+
+<!---
 ## Status Page
 
 Check out the [Optimism status page](https://status.optimism.io/).
@@ -36,3 +39,5 @@ Here are some of our favorite dashboards so far:
 
 - [General Optimism dashboard](https://dune.xyz/Marcov/Optimism-Ethereum)
 - [Uniswap usage comparison, Ethereum vs. Optimism](https://dune.xyz/msilb7/Uniswap-v3-Usage-Comparison-on-Ethereum-vs-Optimism-(OVM-2.0))
+
+-->

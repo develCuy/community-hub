@@ -5,28 +5,19 @@ lang: en-US
 
 ## Testnet Faucets
 
-#### Paradigm MultiFaucet
+#### Rollux Tanenbaum
 
-[Paradigm's MultiFaucet](https://faucet.paradigm.xyz/) is an easy way to get ETH on many different testnets at the same time.
-One of those networks is Optimism Goerli.
+[Syscoin Name Service](https://sysdomains.xyz/rollux-faucet) is an easy way to get Test SYS on Rollux Tanenbaum directly.
 
-#### Coinbase
+#### Request Tanenbaum SYS in Rollux Discord
 
-Users of [Coinbase Wallet](https://www.coinbase.com/wallet) can get test ETH on Optimism Goerli directly from the Coinbase Wallet extension or via the [Coinbase Faucet website](https://coinbase.com/faucets/optimism-goerli-faucet).
+If for any reason the Rollux Tanenbaum Faucet is unavailable, head to the [Rollux Discord](https://discord.gg/rollux) and request some Rollux Test SYS there.
 
 
-### Goerli Faucets
+#### Syscoin NEVM (L1) Tanenbaum
 
-These are faucets you can use to get test ETH on Goerli. 
-We recommend getting Goerli ETH from Alchemy's faucet [here](https://goerlifaucet.com/?a=818c11a8da). 
-Alchemy's Goerli faucet provides 0.25 Goerli ETH per day.
-
-Once you have that Goerli ETH, use [the Optimism Bridge](https://app.optimism.io/bridge) to get it on Optimism Goerli.
-
+Syscoin Foundation offers an [L1 testnet faucet](https://faucet.tanenbaum.io) for Test SYS. This is a social media authenticated faucet. You can bridge this SYS from NEVM Tanenbaum to Rollux Tanenbaum using the [Rollux Portal](https://bridge-testnet.syscoin.org).
 
 ## Mainnet Faucets
 
-If you need to get ETH on mainnet for a contract deployment, you should [bridge ETH onto L2](https://gateway.optimism.io/).
-This process is relatively cheap and takes about 20 minutes to complete.
-
-You can also get some ETH for expenses by [bridging enough USDC](https://optifaucet.com/) courtesy of [Perpetual Protocol](https://perp.com/).
+Syscoin Foundation offers an [L1 mainnet faucet](https://faucet.syscoin.org) that provides a very small amount of SYS that can cover a basic gas fee. This is a social media authenticated faucet. You can bridge this SYS from NEVM to Rollux using the [Rollux Portal](https://bridge.syscoin.org).
