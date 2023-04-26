@@ -3,30 +3,25 @@ title: Node Operator Guide
 lang: en-US
 ---
 
-::: warning This guide is for bedrock
-This guide is for the *bedrock* upgrade, which is coming in Q1, 2023, subject to approval by Optimism governance.
-Do not attempt to use this in production prior to that upgrade. Keep an eye on these docs or [our official Twitter](https://twitter.com/OPLabsPBC) for announcements.
-:::
+This document provides an overview of how to deploy a Rollux node, based upon Optimism Bedrock. To learn more about how Bedrock itself works and its motivations, please see [the specs on GitHub](https://github.com/ethereum-optimism/optimism/tree/develop/specs).
 
-This document provides an overview of how to deploy a Bedrock node. To learn more about how Bedrock itself works and its motivations, please see [the specs on GitHub](https://github.com/ethereum-optimism/optimism/tree/develop/specs).
-
-This document is designed to be a general overview of how to deploy a Bedrock node. 
+This document is designed to be a general overview of how to deploy a Rollux node. 
 
 ## Deployment Overview
 
-A Bedrock deployment consists of two core components: 
+A Rollux deployment consists of two core components: 
 
 1. The Rollup Node, which is responsible for deriving blocks from L1 and passing them to the Execution engine. It also participates in a peer-to-peer network that synchronizes unsubmitted blocks as the sequencer creates them. We refer to this component as `op-node`.
-2. The Execution Engine, which is responsible for executing the blocks it receives from the rollup node and storing state. It also exposes standard JSON-RPC methods to query blockchain data and submit transactions to the network. We refer to this component as `op-geth`, since our Execution Engine is [a minimal fork](https://op-geth.optimism.io/) of `go-ethereum`.
+2. The Execution Engine, which is responsible for executing the blocks it receives from the rollup node and storing state. It also exposes standard JSON-RPC methods to query blockchain data and submit transactions to the network. We refer to this component as `op-geth`, since the Rollux Execution Engine is based upon [a minimal fork](https://op-geth.optimism.io/) of `go-ethereum`.
 
-The Rollup Node and Execution Engine communicate with each other over JSON-RPC via the Engine API. This is similar to how regular Ethereum networks are deployed. The Rollup Node functions as Optimism's consensus client, and the Execution Engine as its execution client.
+The Rollup Node and Execution Engine communicate with each other over JSON-RPC via the Engine API. This is similar to how regular Ethereum networks are deployed. The Rollup Node functions as Rollux's consensus client, and the Execution Engine as its execution client.
 
-For Goerli and mainnet, you may also need to run a third component called Legacy Geth. Legacy Geth is used to serve execution traces for transactions prior to the Bedrock upgrade, which we refer to as "historical transactions". When the Rollup Node encounters an RPC call that requires historical execution traces, it will forward the request to Legacy Geth. Note, however, that unlike our previous networks requests for historical _data_ will be served by the Execution Engine directly. This distinction will be clarified later on in this document.
+<!--- For Goerli and mainnet, you may also need to run a third component called Legacy Geth. Legacy Geth is used to serve execution traces for transactions prior to the Bedrock upgrade, which we refer to as "historical transactions". When the Rollup Node encounters an RPC call that requires historical execution traces, it will forward the request to Legacy Geth. Note, however, that unlike our previous networks requests for historical _data_ will be served by the Execution Engine directly. This distinction will be clarified later on in this document. -->
 
-The architecture of a typical Bedrock deployment looks like this:
+The architecture of a typical Rollux deployment looks like this:
 
 <div style="text-align: center">
-    <img width="400" src="../../../assets/docs/bedrock/bedrock-deployment.png">
+    <img width="400" src="../../../assets/docs/bedrock/rollux-deployment.png">
 </div>
 
 ## System Requirements

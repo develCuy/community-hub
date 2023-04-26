@@ -36,7 +36,7 @@ SupraOracles is growing fast and already supports a lot of networks, including R
 
 ### Price Feed
 
-Rollux Tanenbaum: [`0xFe864157a6FB22E7861727eC15a61D649C0ad92c`]()
+Rollux Tanenbaum: [`0xd48883758f32BA2b2a4ebF6b8238304e3bf10507`](https://rollux.tanenbaum.io/address/0xd48883758f32BA2b2a4ebF6b8238304e3bf10507)
 See [market pairs](https://supraoracles.com/docs/get-started/market-pairs#syscoin-rollux-chain)
 
 Syscoin NEVM (L1) Tanenbaum: [`0x7f003178060af3904b8b70fEa066AEE28e85043E`](https://tanenbaum.io/address/0x7f003178060af3904b8b70fEa066AEE28e85043E)
