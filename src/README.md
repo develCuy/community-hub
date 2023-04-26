@@ -16,6 +16,11 @@ features:
     details: What is Rollux.
     link: /docs/sys/
 
+  - title: Key differences 
+    icon: info-square 
+    details: What Rollux does differently
+    link: /docs/key-differences/
+
   - title: Optimism's Security Model
     icon: shield
     details: Understand the safety and liveness properties of Optimism.

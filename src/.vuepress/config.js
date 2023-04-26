@@ -64,6 +64,10 @@ module.exports = {
         link: '/docs/sys/',
       },
       {
+        text: 'Key differences',
+        link: '/docs/key-differences/',
+      },
+      {
         text: 'Dev Docs',
         link: '/docs/developers/',
       },
