@@ -23,7 +23,7 @@ Such RPCs are either totally unsupported, or will return nonsensical values.
 | Explorer | **[https://explorer.rollux.com](https://explorer.rollux.com)** |
 | HTTP Endpoint<sup>1</sup> | We recommend [Ankr](https://www.ankr.com). Syscoin Foundation also provides this endpoint: **`https://rpc.rollux.com`.** _But it is not for production systems._   |
 | Contract Addresses | [link]()|
-| chainid.link | [https://chainid.link/?network=optimism](https://chainid.link/?network=optimism) -->
+| Chainlist | [https://chainlist.org/chain/570](https://chainlist.org/chain/570)
 
 ::: tip Developer Tip 
 If you are seeing rate limit issues when testing with the public endpoint, or if you need websocket functionality, we recommend signing up for [Ankr](https://ankr.com). Ankr provides RPC and API service for free. Premium accounts gain websocket functionality and more bandwidth for requests.

@@ -3,30 +3,25 @@ title: Node Operator Guide
 lang: en-US
 ---
 
-::: warning This guide is for bedrock
-This guide is for the *bedrock* upgrade, which is coming in Q1, 2023, subject to approval by Optimism governance.
-Do not attempt to use this in production prior to that upgrade. Keep an eye on these docs or [our official Twitter](https://twitter.com/OPLabsPBC) for announcements.
-:::
+This document provides an overview of how to deploy a Rollux node, based upon Optimism Bedrock. To learn more about how Bedrock itself works and its motivations, please see [the specs on GitHub](https://github.com/ethereum-optimism/optimism/tree/develop/specs).
 
-This document provides an overview of how to deploy a Bedrock node. To learn more about how Bedrock itself works and its motivations, please see [the specs on GitHub](https://github.com/ethereum-optimism/optimism/tree/develop/specs).
-
-This document is designed to be a general overview of how to deploy a Bedrock node. 
+This document is designed to be a general overview of how to deploy a Rollux node. 
 
 ## Deployment Overview
 
-A Bedrock deployment consists of two core components: 
+A Rollux deployment consists of two core components: 
 
 1. The Rollup Node, which is responsible for deriving blocks from L1 and passing them to the Execution engine. It also participates in a peer-to-peer network that synchronizes unsubmitted blocks as the sequencer creates them. We refer to this component as `op-node`.
-2. The Execution Engine, which is responsible for executing the blocks it receives from the rollup node and storing state. It also exposes standard JSON-RPC methods to query blockchain data and submit transactions to the network. We refer to this component as `op-geth`, since our Execution Engine is [a minimal fork](https://op-geth.optimism.io/) of `go-ethereum`.
+2. The Execution Engine, which is responsible for executing the blocks it receives from the rollup node and storing state. It also exposes standard JSON-RPC methods to query blockchain data and submit transactions to the network. We refer to this component as `op-geth`, since the Rollux Execution Engine is based upon [a minimal fork](https://op-geth.optimism.io/) of `go-ethereum`.
 
-The Rollup Node and Execution Engine communicate with each other over JSON-RPC via the Engine API. This is similar to how regular Ethereum networks are deployed. The Rollup Node functions as Optimism's consensus client, and the Execution Engine as its execution client.
+The Rollup Node and Execution Engine communicate with each other over JSON-RPC via the Engine API. This is similar to how regular Ethereum networks are deployed. The Rollup Node functions as Rollux's consensus client, and the Execution Engine as its execution client.
 
-For Goerli and mainnet, you may also need to run a third component called Legacy Geth. Legacy Geth is used to serve execution traces for transactions prior to the Bedrock upgrade, which we refer to as "historical transactions". When the Rollup Node encounters an RPC call that requires historical execution traces, it will forward the request to Legacy Geth. Note, however, that unlike our previous networks requests for historical _data_ will be served by the Execution Engine directly. This distinction will be clarified later on in this document.
+<!--- For Goerli and mainnet, you may also need to run a third component called Legacy Geth. Legacy Geth is used to serve execution traces for transactions prior to the Bedrock upgrade, which we refer to as "historical transactions". When the Rollup Node encounters an RPC call that requires historical execution traces, it will forward the request to Legacy Geth. Note, however, that unlike our previous networks requests for historical _data_ will be served by the Execution Engine directly. This distinction will be clarified later on in this document. -->
 
-The architecture of a typical Bedrock deployment looks like this:
+The architecture of a typical Rollux deployment looks like this:
 
 <div style="text-align: center">
-    <img width="400" src="../../../assets/docs/bedrock/bedrock-deployment.png">
+    <img width="400" src="../../../assets/docs/bedrock/rollux-deployment.png">
 </div>
 
 ## System Requirements
@@ -95,7 +90,7 @@ tar -xvf <path to data directory>
 
 #### Configuration
 
-Once `op-geth` is initialized, it can be configured via CLI flags. `op-geth` accepts all the [standard `go-ethereum` flags](https://geth.ethereum.org/docs/interface/command-line-options) as well as a few extra flags that are specific to Optimism. These flags are:
+Once `op-geth` is initialized, it can be configured via CLI flags. `op-geth` accepts all the [standard `go-ethereum` flags](https://geth.ethereum.org/docs/interface/command-line-options) as well as a few extra flags that are specific to Rollux. These flags are:
 
 - `--rollup.historicalrpc`: Enables the historical RPC endpoint. This endpoint is used to fetch historical execution data from Legacy Geth. This flag is only necessary for upgraded networks.
 - `--rollup.sequencerhttp`: HTTP endpoint of the sequencer. `op-geth` will route `eth_sendRawTransaction` calls to this URL. Bedrock does not currently have a public mempool, so this is required if you want your node to support transaction submission. Consult the documentation for the network you are participating in to get the correct URL.
@@ -185,6 +180,7 @@ For best results, run `op-node` with a static IP address that is accessible from
 
 The default port for the peer-to-peer network is `9003`. You will need to open this port on your firewall to receive unsubmitted blocks. For your node to be discoverable, this port must be accessible via both TCP and UDP protocols.
 
+<!---
 ### Legacy Geth
 
 If you are running a node for an upgraded network like Goerli or mainnet, you will also need to run Legacy Geth in order to serve historical execution traces. Fundamentally, Legacy Geth is our old `l2geth` binary running against a preconfigured data directory. To configure Legacy Geth, follow the instructions above for using a preconfigured data directory, then execute the following command:
@@ -211,6 +207,8 @@ As mentioned above, don't forget to specify `--rollup.historicalrpc` on `op-geth
 
 Since Legacy Geth is read-only, it is safe to run multiple Legacy Geth nodes behind a load balancer.
 
+
+
 #### Historical Execution vs. Historical Data Routing
 
 Only requests for historical execution will be routed to Legacy Geth. 
@@ -226,6 +224,7 @@ The term _historical execution_ refers to RPC methods that need to execute trans
 
 If you do not need these RPC methods for historical data, then you do not need to run Legacy Geth at all.
 
+-->
 
 ## Troubleshooting
 
