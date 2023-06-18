@@ -48,7 +48,7 @@ module.exports = {
         link: '/docs/guides/'
       },      
       {
-        text: 'How Optimism Works',
+        text: 'How Rollux Works',
         link: '/docs/protocol/',
       },      
       {
@@ -221,7 +221,7 @@ module.exports = {
           collapsable: true,
         },
         {
-          title: "Getting your dapp on Optimism",
+          title: "Getting your dapp on Rollux",
           children: [
             [
               "https://github.com/ethereum-optimism/optimism-tutorial/tree/main/cross-dom-bridge-eth",
@@ -281,7 +281,7 @@ module.exports = {
  
       '/docs/protocol/': [
         {
-          title: 'How Optimism Works',
+          title: 'How Rollux Works',
           children: [
             '/docs/protocol/1-design-philosophy.md',
             '/docs/protocol/2-rollup-protocol.md',
@@ -300,7 +300,7 @@ module.exports = {
       '/docs/developers/': [
         '/docs/developers/releases.md',
         {
-          title: 'Building on Optimism',
+          title: 'Building on Rollux',
           children: [
             [
               'https://github.com/ethereum-optimism/optimism-tutorial/tree/main/getting-started#development-stacks',

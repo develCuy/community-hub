@@ -21,19 +21,19 @@ features:
     details: What Rollux does differently
     link: /docs/key-differences/
 
-  - title: Optimism's Security Model
+  - title: The Rollux Security Model
     icon: shield
-    details: Understand the safety and liveness properties of Optimism.
+    details: Understand the safety and liveness properties of Rollux.
     link: /docs/security-model/
 
   - title: Protocol specs
     icon: ruler-triangle
-    details: More detailed information about how Optimism works under the hood.
+    details: More detailed information about how Rollux works under the hood.
     link: /docs/protocol/
 
   - title: Developer docs
     icon: code
-    details: Resources for building a decentralized application on Optimism.
+    details: Resources for building a decentralized application on Rollux.
     link: /docs/developers/
 
   - title: Tools for developers
