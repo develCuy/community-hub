@@ -50,6 +50,10 @@ module.exports = {
       {
         text: 'How Rollux Works',
         link: '/docs/protocol/',
+      },
+      {
+        text: 'Dev Docs',
+        link: '/docs/developers/',
       },      
       {
         text: 'Support',
@@ -67,14 +71,10 @@ module.exports = {
         text: 'Key differences',
         link: '/docs/key-differences/',
       },
-      {
-        text: 'Dev Docs',
-        link: '/docs/developers/',
-      },
-      {
+      /*{
         text: "Governance",
         link: "/docs/governance/"
-      },   
+      }, */  
       {
         text: 'Contribute',
         link: '/docs/contribute/',
@@ -95,7 +95,7 @@ module.exports = {
             iconPrefix: 'fab fa-',
             iconClass: 'color-github',
             text: 'GitHub',
-            link: 'https://github.com/syscoin',
+            link: 'https://github.com/SYS-Labs/rollux',
           },
           {
             icon: 'twitter',
@@ -104,13 +104,13 @@ module.exports = {
             text: 'Twitter',
             link: 'https://twitter.com/RolluxL2',
           },
-        /*  {
+          {
             icon: 'computer-classic',
             iconClass: 'color-ecosystem',
             text: 'Ecosystem',
-            link: 'https://syscoin.org/ecosystem',
+            link: 'https://rollux.com/ecosystem',
           }
-         */ 
+         
         ]
       }
     ],
@@ -265,17 +265,17 @@ module.exports = {
         '/docs/security-model/optimism-security-model.md',
         '/docs/security-model/bounties.md',
         [
-          'https://medium.com/ethereum-optimism/our-pragmatic-path-to-decentralization-cb5805ca43c1',
-          'Decentralizing Optimism'
+          //'https://medium.com/ethereum-optimism/our-pragmatic-path-to-decentralization-cb5805ca43c1',
+          //'Decentralizing Optimism'
         ]
       ],
       '/docs/sys/': [
-        '/docs/sys/Rollux-Intro.md',
-        '/docs/sys/Design.md',
+        '/docs/sys/Intro.md',
+        '/docs/sys/Finality.md',
         '/docs/sys/PoDA.md',
         '/docs/sys/Gas.md',
         [
-          'Sys'
+          'Syscoin L1'
         ]
       ],
  

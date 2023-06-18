@@ -9,7 +9,7 @@ At the moment, it’s important to understand that the security of the Rollux bl
 This multisig wallet can be used to upgrade core Optimism smart contracts without upgrade delays.
 
 Please also keep in mind that just like any other system, **the Rollux codebase may contain unknown bugs** that could lead to the loss of some or all of the assets held within the system.
-[The Rollux smart contract codebase has been audited, and is based upon the repeatedly audited Optimism codebase](https://github.com/ethereum-optimism/optimism/tree/develop/technical-documents/security-reviews) but **audits are not a stamp of approval** and **a completed audit does not mean that the audited codebase is free of bugs.**
+[The Rollux smart contract codebase has been audited, and is based upon the continually-audited Optimism codebase](https://github.com/sys-labs/rollux/tree/develop/technical-documents/security-reviews) but **audits are not a stamp of approval** and **a completed audit does not mean that the audited codebase is free of bugs.**
 It’s important to understand that using Rollux inherently exposes you to the risk of bugs within the Rollux or Optimism codebase, and that you use Rollux at your own risk.
 
 ## Security Model FAQ
@@ -28,11 +28,11 @@ Members are anonymous in order to make the multisig more difficult to compromise
 
 ### How is Rollux planning to remove the multisig?
 
-Rollux's path toward decentralizing the Rollux infrastructure follows Optimism's approach. Check out Optimism’s detailed [Pragmatic Path to Decentralization](https://medium.com/ethereum-optimism/our-pragmatic-path-to-decentralization-cb5805ca43c1) post for a detailed view into how the multisig may be removed in a way that can make Rollux provide true fault proof security.
+The path to decentralized Rollux infrastructure follows new and novel research by SYS Labs rather than directly copying Optimism's research and plans. In the future we will provide further details on how the multisig will be removed in a way that can make Rollux provide true fault proof security.
 
 ### How can I help make Rollux more secure?
 
 If you identify bugs or vulnerabilities in Rollux, report them at the [Rollux GitHub repository](https://github.com/SYS-Labs/rollux). If you discover a bug with a cause rooted in Optimism's codebase, you should also take advantage of the fact that [Optimism has one of the biggest bug bounties (ever)](https://community.optimism.io/docs/security-model/bounties/).
-At the time of writing this, you can earn up to $2,000,042 by finding critical bugs in the Optimism codebase. Whether your bug is particular to Rollux or affects Optimism, do make the SYS Labs team aware of it via the Rollux GitHub. 
+At the time of writing this, you can earn up to $2,000,042 by finding critical bugs in the Optimism codebase. Whether your bug is particular to Rollux or affects Optimism, do make the SYS Labs team aware of it via the [Rollux GitHub](https://github.com/SYS-Labs/rollux). 
 
 <!--- You can also [run your own verifier node](https://github.com/smartcontracts/simple-optimism-node/) to detect network faults. -->

@@ -20,9 +20,9 @@ In Rollux's case this parent blockchain is Syscoin, which is PoW at its base.
 <summary><b>Syscoin L1 Data Availability for Rollux</b></summary>
 Unlike Optimism which must expensively store blocks on the Ethereum L1 as calldata, Rollux L2 blocks are stored via Syscoin's Layer 1 PoDA protocol (Proof-of-Data-Availability). A proof of the block is stored on Syscoin's native (UTXO) blockchain, and the entirety of the raw block data is stored in the cloud via Syscoin full nodes that also function as PoDA cloud clients.
 
-We highly recommend referring to Syscoin's article ["Revealing the Method in the Madness"](https://syscoin.org/news/revealing-the-method-in-the-madness), sections "Optimistic Rollup with PoDA (Proof of Data Availability)" and "Proof of Data Availability (PoDA)" for a high level understanding of Syscoin PoDA and its benefits.
+Refer to [PoDA](../sys/PoDA.md) for a high level understanding of Syscoin PoDA and its benefits.
 
-PoDA already provides a number of benefits over Ethereum's work-in-progress and future DA solution (proto-danksharding):
+In brief, PoDA already provides a number of benefits over Ethereum's work-in-progress and future DA solution (proto-danksharding):
 
 
 1. PoDA does not need to shard data. Every full node processes blobs fully.

@@ -5,13 +5,17 @@ lang: en-US
 
 ## Optimistic Rollup with PoDA (Proof of Data Availability)
 
-The general [design](Design.md) for a layer 2 using PoDA on Syscoin layer 1 can be applied with ZK-based rollups (we have prototyped this with Hermez zkEVM) the same as we have applied with Optimism Bedrock. Since Optimistic rollups have some advantages over zkEVM right now due to the overhead of ZK proving, we chose to integrate with Bedrock to begin, and will introduce a hybrid solution likely along the lines of Bedrock/Hermez/zkSync upon emergence of hardware-efficient ZK proving solutions. We feel the Bedrock design is currently the cleanest, most secure and efficient of any of the many rollup designs today.
+The general [design](Design.md) for a layer 2 using PoDA on Syscoin layer 1 can be applied with ZK-based rollups (we have prototyped this with Hermez zkEVM) the same as we have applied with Optimism Bedrock. Since optimistic rollups have some advantages over zkEVM right now due to the overhead of ZK proving, we chose to integrate with Bedrock to begin, and will introduce a hybrid solution likely along the lines of Bedrock/Hermez/zkSync upon emergence of hardware-efficient ZK proving solutions. We feel the Bedrock design is currently the cleanest, most secure and efficient of any of the many rollup designs today.
 
 <div align="center">
 <img width="800" src="../../assets/docs/sys/overall.png">
 </div>
 
-The base layer required a working mechanism for decentralized finality, hash-based blobs and an EVM that is stable and able to provide censorship resistance to rollups on layer 2 and beyond. We released finality + EVM in our NEVM release (Syscoin Core v4.3) in December 2021. To integrate PoDA, we assessed the Bedrock codebase of Optimism and created our initial integration ([see the diff](https://github.com/sidhujag/optimism) of our Tanenbaum official testnet deployment). The gist of the integration is summed as follows. This allows us to easily integrate PoDA into any rollup systematically. You can follow the graphic above with the explanation of the numbered sequences below.
+The base layer required a working mechanism for decentralized finality, hash-based blobs and an EVM that is stable and able to provide censorship resistance to rollups on layer 2 and beyond. We released finality + EVM in our NEVM release (Syscoin Core v4.3) in December 2021. To integrate PoDA, we assessed the Bedrock codebase of Optimism and created our initial integration. 
+
+You can view the difference between Rollux's and Optimism's approaches to data availability firsthand by viewing this Github commit: [https://github.com/sys-labs/rollux/commit/25a4c9410ddae31ff7195f67495491f71e684e03](https://github.com/sys-labs/rollux/commit/25a4c9410ddae31ff7195f67495491f71e684e03). You can also view the full diff here: [https://github.com/ethereum-optimism/optimism/compare/develop...sys-labs:rollux:develop](https://github.com/ethereum-optimism/optimism/compare/develop...sys-labs:rollux:develop).
+
+The gist of the integration is summed as follows. This allows us to easily integrate PoDA into any rollup systematically. You can follow the graphic above with the explanation of the numbered sequences below.
 
 1. The `sequencer` (responsible for preserving the order of the unsafe blocks on the rollup, and enabling data availability) sends raw transactions to PoDA (on our UTXO chain) which confirms the blob via its Keccak hash. Data lookup can be performed in the NEVM via a precompile by its Keccak hash. It would create blobs (for now it creates just 1 per L2 block) but theoretically the sequencer can create multiple blobs at once.
 
@@ -69,4 +73,4 @@ The final piece to understand PoDA is how the protocol removes raw data after ne
 
 ### Read More
 
-[PoDA](https://docs.syscoin.org/docs/tech/poda)
+[More PoDA documentation](https://docs.syscoin.org/docs/tech/poda)
