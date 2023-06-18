@@ -1,18 +1,29 @@
-## Rollux
+---
+title: Introduction to Syscoin
+lang: en-US
+---
 
-Although the first version of Rollux is an optimistic rollup, it has been designed to also integrate ZK-based technologies as they mature. Version 1 is a massive leap for blockchain technology, but it will only continue to evolve as new breakthroughs are discovered and applied. Syscoin has a knack for hybridizing the best of what exists, whether Bitcoin and Ethereum on our Layer 1 or optimistic and ZK-Rollups on our Layer 2. 
+Rollux is fast, crazy inexpensive, and attracts a lot of attention! What you might not realize is you should be just as excited about SYS as you are about Rollux. Once you see *why* Rollux is built on Syscoin, and get an overview of what it has to offer, we think you will be. After all, the great things Rollux provides would not be possible without an appropriate L1 supporting it from beneath. 
 
-Our EVM-compatibility means projects built for the likes of well-known networks like Ethereum or Polygon can easily be ported to Rollux to take advantage of greater speeds, superior PoW security, and cost-savings through incredibly discounted transaction fees. If your project would benefit from these traits, then we invite you to join the number of other projects already committed to building on Syscoin, who can be found at <https://syscoin.org/ecosystem>.
+## Syscoin in a Nutshell
 
-We are excited to have you join us as we explore uncharted territory. 
+Syscoin is designed as the ideal settlement layer and data availability layer for modular scaling technologies like rollups. It provides a coordinated dual-chain stack;
 
-## Rollux Optimistic Rollups
+1. Syscoin native (UTXO, Bitcoin-based)
+2. Syscoin NEVM (Network-Enhanced Virtual Machine) which provides an EVM
 
-Syscoin's first Rollux implementation is based upon Optimism Bedrock and utilizes Syscoin PoDA for Layer 1 data availability.
+**Syscoin makes rollups more secure with its Bitcoin auxPoW settlement, multi-quorum finality, and efficient data availability in the form of [PoDA (Proof-of-Data-Availability)](PoDA.md).** PoDA is the very first complete L1 data availability solution ever built and deployed to a main network. Furthermore, Syscoin provides finality in the form of a multi-quorum BLS signature scheme as an enhancement on top of Nakamoto consensus which adds resistance selfish mining, and keeps the chain resilient in the face of non-final scenarios by enabling the protocol to resolve down to pure Nakamoto consensus instead of forking/stopping in those situations, unlike Ethereum's Casper.
+
+**PoDA and multi-quorum finality are unique innovations of Syscoin.**
+
+## Super bullish on modularity
+
+Syscoin NEVM was launched to mainnet with only an 8M gas limit on L1 blocks — less than half of Ethereum’s current gas limit. What's even wilder is NEVM's block target is 15 times longer than Ethereum's, at 2.5 minutes (of course dynamically adjustable by miners in majority). With this, Syscoin flexes that it can provide real scalability without requiring huge blocks on L1. It will remain nimble, efficient, and easy for regular off-the-shelf computers to sync with, even while supporting a great deal of demand. Talk about fostering decentralization. **How's that for making a statement?**  This also solves the contentious problem of proper incentives for proper usage. End-users will almost always opt to use Rollux instead of using the L1 directly, which means more real-estate for scaling layers to settle on Syscoin's L1.
+
 
 ## How does Syscoin help rollups work optimally?
 
-Rollups are the first technology to viably help scale EVM computation to massive user demand. Rollups are also key to achieving a near-optimal scenario in the blockchain trilemma. Syscoin asserts such a near-optimal scenario can only be achieved by supporting rollups with a holistically modular Layer 1 that offers proven security and decentralization.
+Rollups are the first modular technology to viably help scale EVM computation to massive user demand. Rollups are also key to achieving a near-optimal scenario in the blockchain trilemma. Syscoin asserts this can only be achieved by supporting rollups with a holistically modular Layer 1 that offers proven security, data availability, and decentralization.
 
 Syscoin is designed holistically with this in mind. All near-instant activity on Rollux inherits the full security of Syscoin’s L1 in the background, including finality.
 
@@ -26,10 +37,10 @@ Syscoin is [merge-mined](https://docs.syscoin.org/docs/tech/merged-mining) by Bi
 - Decentralized finality achievable without fault concerns
 - Better survivability against irrationality
 
-However, Syscoin does not mirror Bitcoin's economics and consensus rules. Syscoin's economy is utility-focused and based upon [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559). We source Bitcoin’s network for the hardness it provides. 
+However, Syscoin does not mirror Bitcoin's economics and consensus rules. Syscoin's economy is utility-focused and based upon [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559). We source Bitcoin’s network for the hardness it provides and pass that on to rollups! 
 
 ### [Finality](Finality.md) that is Decentralized and Fault Tolerant
-Syscoin’s finality is sourced from a multi-quorum consisting of 4 groups of 400 masternodes (1,600) which are randomly selected among the entirety of the network (currently ~2,500 MNs). Each quorum is reformed every few hours. 3 out of 4 quorums must agree on a block in order to establish a [chainlock](https://docs.syscoin.org/docs/tech/finality) (finality).
+Syscoin’s finality is sourced from a multi-quorum consisting of 4 groups of 400 masternodes (1,600) which are randomly selected among the entirety of the network (currently ~2,500 MNs). Each quorum is reformed every few hours. 3 out of 4 quorums must agree on a block in order to establish a chainlock.
 
 This mechanism provides a high probability of finality. In the rare event that finality cannot be achieved on a block, the network falls back to the longest chain rule of Nakamoto consensus - a seamless and non-breaking event.
 
@@ -43,7 +54,7 @@ Every five blocks (total of 12.5 minutes based on average blocktime), a chainloc
 
 Syscoin’s finality provides effective resistance to 51%, malicious long-range MEV, and selfish mining attacks, while retaining PoW as the underlying consensus mechanism. Attackers must accomplish two expensive and challenging tasks to achieve a successful 51% attack: 1) Control greater than 50% of Bitcoin's hash power supplied to Syscoin, plus 2) Control a super-majority of Syscoin masternodes.
 
-### Efficient Data Availability at Layer 1 with PoDA
+### Efficient Data Availability on Layer 1 with [PoDA](PoDA.md)
 Data availability is required to exist within the security domain of Layer 1 in order for rollups to properly serve critical financial applications by securing users’ ability to exit to L1. Syscoin’s L1 DA solution is called PoDA (Proof of Data Availability). Syscoin’s PoDA differs from Ethereum’s danksharding in how data is stored, presented, pruned, and how fees are calculated. PoDA has characteristics that make it a valuable alternative to Ethereum’s work-in-progress data availability solution, Proto-Danksharding.
 
 PoDA’s advantages can be summarized as:
@@ -60,7 +71,11 @@ PoDA’s design considers proving and archiving as separate concerns. With PoDA,
 
 Validium (fully offchain DA) is also available as an alternative to PoDA for less-critical applications where the focus might be on even lower cost and higher throughput by trading-off Layer 1 data security. However, in the case of Syscoin PoDA, Layer 1 data security is quite affordable and PoDA nodes can store raw data offchain if they wish while still gaining the security of onchain state and proving.
 
-**[PoDA documentation](https://docs.syscoin.org/docs/tech/poda)**   
+
+## [Inherited L1 Security with L2 Variable Gas Rate Dominance](Gas.md)
+
+With PoDA, savings in terms of gas units ranges from 315000x less gas than native Ethereum to 16500x cheaper than Optimism Bedrock on Ethereum today.
+
 
 -----
 

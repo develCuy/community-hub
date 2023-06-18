@@ -69,13 +69,13 @@ export default Vue.extend({
                                     " Get support for going live"
                                 ])
                             ]), */
-                            h("a", { attrs: { href: "https://github.com/syscoin", target: "_blank" } }, [
+                            h("a", { attrs: { href: "https://github.com/SYS-Labs/rollux", target: "_blank" } }, [
                                 h("div", [
                                     h("i", { attrs: { class: "fab fa-github" } }),
                                     " Make an issue on GitHub"
                                 ])
                             ]),
-                            h("a", { attrs: { href: "https://github.com/syscoin", target: "_blank" } }, [
+                            h("a", { attrs: { href: "https://github.com/SYS-Labs/rollux", target: "_blank" } }, [
                                 h("div", [
                                     h("i", { attrs: { class: "far fa-hands-helping" } }),
                                     " Contribute to Rollux"

@@ -3,10 +3,15 @@ title: Finality
 lang: en-US
 ---
 
+Here you will find detailed information on rationale and design for Finality on the Syscoin L1.
 
 ## Finality - Multi-Quorum Chainlocks
 
 Syscoin’s masternodes are validators that run as full nodes. This increases the Nakamoto Coefficient (a measurement of the degree of decentralization of disparate services/nodes). These full nodes do not trust others through consensus, rather they each reproduce their own local state in order to verify the chain. This aligns with our ideals. In contrast, things like sharding or relegating consensus to PoS do not. We are PoW at our foundation and know that in order to preserve long-term decentralized contracts with the world we must tie the computational integrity of the ledger to the tangibility of a race for physical energy extraction. Understanding that, the right questions right now are how does Syscoin’s finality work in a decentralized way, and how does it not relegate consensus into a system that is effectively PoS?
+
+<div align="center">
+<img width="800" src="../../assets/docs/sys/diagramChainlocks.png">
+</div>
 
 You can see above that every fifth block gets “locked”. This is accomplished by the following. Four quorums are formed, each consisting of 400 randomly selected masternodes (1,600 total). Masternodes are deterministically assigned to quorums and the quorums are periodically reordered. Masternodes cannot change the order of when/where they are put into quorums. These quorums form BLS signatures to sign a vote on the state of the blockchain every fifth block. Basically, they vote whether they see the same block at the same height. When at least three out of four of the quorums agree, this is aggregated into one final BLS signature. The rest of the network sees the final signature and validates that the quorums are in agreement. The validators inside each quorum get from others only the information they need in order to create the BLS signature. This has been proven on our live mainnet for over a year to be a wonderful way to efficiently vote on the state of the chain. 
 

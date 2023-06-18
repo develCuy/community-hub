@@ -5,18 +5,9 @@ lang: en-US
 
 ## Inherited L1 Security with L2 Variable Gas Rate Dominance
 
-Rollups today inherit the security of the base layer (Ethereum) by paying a variable fee based on the size of the batch of transactions settling from layer 2. With PoDA integrated into Bedrock this fee falls down drastically to just 1400 gas per batch (which itself is 2MB of transactions). Since the BatchInbox smart contract can take a variable number of batches (called blobs) to verify them via the data precompile they will be negligible in the overall cost of a layer 2 transaction. The rollup sequencer may pay 2000 gas (including overhead for the contract) for every 2MB of transactions (roughly 30000 transactions at 70 bytes per L2 transaction compressed) or roughly around only 15 gas per transaction.
+Rollups today inherit the security of the base layer by paying a variable fee based on the size of the batch of transactions settling from layer 2. With PoDA integrated into Bedrock this fee falls down drastically to just 1400 gas per batch (which itself is 2MB of transactions). Since the BatchInbox smart contract can take a variable number of batches (called blobs) to verify them via the data precompile they will be negligible in the overall cost of a layer 2 transaction. The rollup sequencer may pay 2000 gas (including overhead for the contract) for every 2MB of transactions (roughly 30000 transactions at 70 bytes per L2 transaction compressed) or roughly around only 15 gas per transaction.
 
-Without a rollup those 30000 transactions would cost 630M gas. Using Optimism Bedrock on Ethereum today would cost roughly 32M gas. So Optimism brings around 20x savings from native Ethereum. With PoDA savings range from 315000x cheaper than native Ethereum to 16500x cheaper than Optimism Bedrock on Ethereum today. Note that there is also a small fee of around the same to put the data in PoDA on the UTXO chain as well.
-
-### Sample Gas Cost
-
-| Gas Cost Samples (rounded)                   | Rollux on Syscoin       | Optimism on Ethereum     |
-| :--------------------------------------------|-------------------------|--------------------------|
-|Approve spend (ERC-20)                        |0.00007 SYS              |0.00017 ETH               |
-|Value transfer (ERC-20)                       |0.00025 SYS              |0.00046 ETH               |
-|Value transfer (native coin)                  |0.00004 SYS              |0.00010 ETH               |
-
+Without a rollup those 30K transactions would cost 630M gas. Using Optimism Bedrock on Ethereum today would cost roughly 32M gas. So Optimism brings around 20x savings from native Ethereum.  That's great!  Even so, with PoDA, savings range from 315000x cheaper than native Ethereum to 16500x cheaper than Optimism Bedrock on Ethereum today. Note that there is also a small fee of around the same to put the data in PoDA on the UTXO chain as well.
 
 ### Storage
 
