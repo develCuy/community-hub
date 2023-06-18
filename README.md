@@ -18,8 +18,15 @@ This is the source for the [community hub](https://community.rollux.com/).
 # Usage
 ## Serve Locally
 ```shell
+export NODE_OPTIONS=--openssl-legacy-provider
+```
+```shell
+yarn install
+```
+```shell
 yarn dev
 ```
+
 
 Then navigate to http://localhost:8080.
 If that link doesn't work, double check the output of `yarn dev`. 
