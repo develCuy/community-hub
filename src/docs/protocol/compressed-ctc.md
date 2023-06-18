@@ -3,6 +3,8 @@ title: The Canonical Transaction Chain (CTC) Format
 lang: en-US
 ---
 
+## This section will be updated soon with a map of the Rollux CTC format and transaction header for L1 PoDA. Until then, this page will reflect Optimism's CTC format. Please check back soon. For now, refer to [Block Storage](../protocol/2-rollup-protocol/#block-storage)
+
 Every transaction submitted to Optimism is written to the mainnet Ethereum blockchain as call data, this is how Optimism inherits the availability and integrity guarantees of Ethereum.
 This is also the cause of the majority of the cost of Optimism transactions.
 At the time of writing it is cheaper to write a kilobyte to storage on Optimism than it is to add one byte to the calldata on Ethereum.

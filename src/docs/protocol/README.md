@@ -3,29 +3,19 @@ title: Protocol specs
 lang: en-US
 ---
 
-With the OVM 2.0 upgrade, which happened on November 11th, 2021, the Optimism protocol went through its biggest upgrade to date. The primary focus of this upgrade was [EVM Equivalence](https://medium.com/ethereum-optimism/introducing-evm-equivalence-5c2021deb306), a new design for Optimism that brought it close to 1:1 parity with Ethereum. For a high level overview of the current protocol version, see ['How Optimism works'](./2-rollup-protocol.md) section.
+Rollux is the optimistic rollup that serves as Syscoin's official Layer 2. Rollux is built by SYS Labs. Based upon Optimism Bedrock, Rollux provides [EVM equivalence](https://medium.com/ethereum-optimism/introducing-evm-equivalence-5c2021deb306) and is close to 1:1 parity with standard EVM. Rollux goes further than Optimism plus Ethereum by providing the security of Bitcoin’s mining network and Syscoin’s decentralized Layer 1 finality and data availability. Rollux also aims to solve for decentralized sequencing in a new and novel way. Also, Rollux itself already provides Layer 2 data availability natively, which means it is already primed to support Layer 3 and beyond for "fractal scaling". All of this means Rollux is secure, scalable, costs very little to use, and is a big leap toward making blockchain tech viable for global mass adoption.
 
-## Roadmap
-
-Below is a brief summary of some of the planned [Optimism roadmap](https://www.optimism.io/about) releases.
+For a high level overview of the current protocol version, see ['How Rollux works'](./2-rollup-protocol.md) section.
 
 ## Next gen fault proofs
 
-As part of the OVM 2.0 upgrade, the **Optimism fault proof mechanism had to be temporarily disabled**. This means that users of the Optimism network currently need to trust the Sequencer node (run by Optimism PBC) to publish valid state roots to Ethereum. **You can read more about our security model [here](../security-model/README.md)**. 
+As part of Rollux's OVM 2.0 upgrade, the **Rollux fault proof mechanism had to be temporarily disabled**. This means that users of the Rollux network currently need to trust the Sequencer node (run by Syscoin Foundation) to publish valid state roots to Syscoin. **You can read more about our security model [here](../security-model/README.md)**. 
 
-We're making progress on the upgrade fault proof mechanism and we expect to productionize our work in 2022. You can keep up with developments in the [Cannon repository](https://github.com/ethereum-optimism/cannon/).
+The Optimism team continues to make progress on the upgraded fault proof mechanism and expects to productionize their work in 2023, at which point Rollux will likewise implement it. You can keep up with their developments in the [Cannon repository](https://github.com/ethereum-optimism/cannon/).
 
 
 ## Decentralizing the sequencer
 
-Currently, Optimism runs the sole sequencer on Optimism. This does not mean that Optimism can censor user transactions. However, it is still desirable to decentralize the sequencer over time, eliminating Optimism's role entirely so that anyone can participate in the network as a block producer.
+Currently, the non-profit Syscoin Foundation runs the sole sequencer on Rollux. This does not mean that Syscoin Foundation can censor user transactions. However, it is still desirable to decentralize the sequencer over time, perhaps eliminating the foundation's role entirely by anyone having the ability to participate in the network as a block producer.
 
-The first step to decentralizing the sequencer is to still have one sequencer at a time, but rotate that sequencer with some frequency. The precise mechanic for sequencer rotation is not yet finalized, but will involve two components:
-
-- an **economic mechanism** which creates a competitive market for sequencing, and redirects excess sequencer profits [towards protocol development](https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c).
-- a **governance mechanism** which prevents sequencers from prioritizing short-term profits over the long-term health of the network.
-
-After this, the next step is to support multiple concurrent sequencers. This can be simply achieved by adopting a standard BFT consensus protocol, as used by other L1 protocols and sidechains like Polygon and Cosmos.
-
-
-You can keep up with the roadmap progress in [Cannon repository](https://github.com/ethereum-optimism/cannon/) for the fault proofs and [Optimism specs repository](https://github.com/ethereum-optimism/optimistic-specs) for the overall protocol work.
+SYS Labs researchers are at work to solve decentralized sequencing in a new and novel way, and to implement it with Rollux. The overall goal is to support multiple concurrent sequencers in a manner that is Byzantine fault tolerant, with the same degree of decentralization offered by the L1 design, or as close as possible.

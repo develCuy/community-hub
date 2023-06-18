@@ -10,7 +10,7 @@ If you haven't filled out the [get started form]() please do so prior to reading
 We are excited for your deployment onto Rollux! 
 You will be welcomed by a great community 🫂🫂. Make sure to jump into the `#🔨│builder-general` [Discord](https://discord.gg/rollux/) channel ⚙️⚙️!
 
-The business development team gets a flurry of inbound messages and calls every day and we reply to them as efficiently as possible, but we are only human! 
+The business development team gets a flurry of inbound messages and contact requests every day and we reply to them as efficiently as possible, but we are only human! 
 Please be patient if you are in need of direct support. 
 We cannot always provide direct help, but we strive to help everyone succeed on Rollux through the various resources we provide to projects. 
 
@@ -19,15 +19,20 @@ We cannot always provide direct help, but we strive to help everyone succeed on 
 
 Steps to take if you would like developer support immediately, ranked in order of response times. 
 
-1. See our [Developer Documentation](../developers/) and [Tutorials](https://github.com/syscoin/rollux-tutorial).
+1. See our [Developer Documentation](../developers/) and [Tutorials](https://github.com/sys-labs/rollux-tutorial).
 1. Head over to `🤖│dev-support` on [Discord](https://discord.gg/rollux/) for the fastest help 
 
 
 ## Marketing Requests 🦸🦸
 
-When your project is deployed on Rollux, you can be added to [our ecosystem page](). 
-Simply [fill out this form]() to be included. Inclusion is at our discretion. 
-We add new projects live on the Rollux mainnet [here].
+When your project is deployed on Rollux, you can be added to [our ecosystem page](https://rollux.com/ecosystem). 
+Simply [fill out this form]() to request to be included. Inclusion is at our discretion.
+
+### Tweeting
+
+We do occasionally retweet but we try to keep the bar high for these as our Twitter feed must be kept as valuable/high signal as possible. 
+Other than RT's, we may like or reply to a tweet or include it in a development update or Syscoin might add it to the Syscoin Weekly blog+tweet. 
+You're welcome to submit your tweet for amplification but please keep in mind if and how we interact with it is at our sole discretion.
 
 <!--
 ### Promoting Values before anything else
@@ -35,11 +40,7 @@ We add new projects live on the Rollux mainnet [here].
 We love to promote values-aligned projects as part of our broader content program.
 
 
-### Tweeting
 
-We do the occasional retweet but the bar for these is kept quite high in order to keep our Twitter feed as valuable/high signal as possible. 
-Other than RT's, we may like or reply to a tweet or include it in our weekly wrap up thread. 
-You're welcome to submit your tweet for amplification but please keep in mind if and how we interact with it is at our sole discretion.
 
 
 ### OPRadio
