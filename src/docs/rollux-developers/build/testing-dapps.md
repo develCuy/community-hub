@@ -1,5 +1,5 @@
 ---
-title: Testing Decentralized Applications with Optimism
+title: Testing Decentralized Applications with Rollux
 lang: en-US
 ---
 
