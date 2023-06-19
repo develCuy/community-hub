@@ -5,35 +5,32 @@ lang: en-US
 
 ## What is this?
 
-A development environment is a local installation of the entire Optimism system.
+A development environment is a local installation of the entire Rollux system.
 Our default development environment includes both L1 and L2 development nodes.
-Running the Optimism environment locally is a great way to test your code and see how your contracts will behave on Optimism before you graduate to a testnet deployment (and eventually a mainnet deployment).
-
-Alternatively, you can get a hosted development node from [Alchemy](https://www.alchemy.com/optimism) or [any of these providers](../../useful-tools/providers.md).
-
+Running the Rollux environment locally is a great way to test your code and see how your contracts will behave on Rollux before you graduate to a testnet deployment (and eventually a mainnet deployment).
 
 ## Do I need this?
 
 We generally recommend using the local development environment if your application falls into one of the following categories:
 
-1. **You're building contracts on both Optimism and Ethereum that need to interact with one another.** The local development environment is a great way to quickly test interactions between L1 and L2. The Optimism testnet and mainnet environments both have a communication delay between L1 and L2 that can make testing slow during the early stages of development.
+1. **You're building contracts on both Rollux and Syscoin that need to interact with one another.** The local development environment is a great way to quickly test interactions between L1 and L2. The Rollux Tanenbaum testnet and mainnet environments both have a communication delay between L1 and L2 that can make testing slow during the early stages of development.
 
-2. **You're building an application that might be subject to one of the few [differences between Ethereum and Optimism](./differences.md).** Although Optimism is [EVM equivalent](https://medium.com/ethereum-optimism/introducing-evm-equivalence-5c2021deb306), it's not exactly the same as Ethereum. If you're building an application that might be subject to one of these differences, you should use the local development environment to double check that everything is running as expected. You might otherwise have unexpected issues when you move to testnet. We strongly recommend reviewing these differences carefully to see if you might fall into this category.
+2. **You're building an application that might be subject to one of the few [differences between Ethereum and Rollux](./differences.md).** Although Rollux is [EVM equivalent](https://medium.com/ethereum-optimism/introducing-evm-equivalence-5c2021deb306) because it is based on Optimism Bedrock, it's not exactly the same as Ethereum. If you're building an application that might be subject to one of these differences, you should use the local development environment to double check that everything is running as expected. You might otherwise have unexpected issues when you move to testnet. We strongly recommend reviewing these differences carefully to see if you might fall into this category.
 
 However, not everyone will need to use the local development environment.
-Optimism is [EVM equivalent](https://medium.com/ethereum-optimism/introducing-evm-equivalence-5c2021deb306), which means that Optimism looks almost exactly like Ethereum under the hood.
+Being EVM equivalent means Rollux looks almost exactly like Ethereum under the hood.
 If you don't fall into one of the above categories, you can probably get away with simply relying on existing testing tools like Truffle or Hardhat.
-If you don't know whether or not you should be using the development environment, feel free to hop into the [Optimism discord](https://discord-gateway.optimism.io).
+If you don't know whether or not you should be using the development environment, feel free to hop into the [Rollux discord](https://discord.gg/rollux).
 Someone nice will help you out!
 
 ## What does it include?
 
-Everything you need to test your Optimistic application:
+Everything you need to test your Rollux application:
 
-1. An L1 (Ethereum) node available at [http://localhost:9545](http://localhost:9545).
-1. An L2 (Optimism) node available at [http://localhost:8545](http://localhost:8545).
-1. All of the Optimism contracts and services that make L1 ⇔ L2 communication possible.
-1. Accounts with lots of ETH on both L1 and L2.
+1. An L1 (Syscoin NEVM) node available at [http://localhost:8101](http://localhost:8101).
+1. An L2 (Rollux) node available at [http://localhost:8545](http://localhost:8545).
+1. All of the Rollux contracts and services that make L1 ⇔ L2 communication possible.
+1. Accounts with lots of SYS on both L1 and L2.
 
 ## Prerequisites
 
@@ -76,16 +73,15 @@ It is now available on Docker itself as `docker compose`
 
 ## Getting the software
 
-You can set up your development environment either by downloading the required software from [Docker Hub](https://hub.docker.com/u/ethereumoptimism) or by building the software from the [source code](https://github.com/ethereum-optimism/optimism).
-Downloading images from Docker Hub is easier and more reliable and is the recommended solution.
+You can set up your development environment by building the software from the [source code](https://github.com/SYS-Labs/rollux).
 
 ### Downloading from Docker Hub
 
 1. Clone and enter the [Optimism monorepo](https://github.com/ethereum-optimism/optimism):
 
    ```sh
-   git clone https://github.com/ethereum-optimism/optimism.git
-   cd optimism
+   git clone https://github.com/SYS-Labs/rollux.git
+   cd rollux
    ```
 
 2. Move into the `ops` directory:
@@ -113,14 +109,14 @@ You can interact with these nodes at the following ports:
 - L1 (Ethereum) node: [http://localhost:9545](http://localhost:9545)
 - L2 (Optimism) node: [http://localhost:8545](http://localhost:8545)
 
-## Getting ETH for transactions
+## Getting SYS for transactions
 
 ::: warning WARNING
 The private keys for the accounts used within the local development environment are **PUBLICLY KNOWN**.
-Any funds sent to these accounts on a live network (Ethereum, Optimism, or any other public network) **WILL BE LOST**.
+Any funds sent to these accounts on a live network (Syscoin, Rollux, Ethereum, Optimism, or any other public network) **WILL BE LOST**.
 :::
 
-All accounts that are funded by default within [Hardhat](https://hardhat.org) are funded with 5000 ETH on both L1 and L2.
+All accounts that are funded by default within [Hardhat](https://hardhat.org) are funded with 5000 SYS on both L1 and L2.
 These accounts are derived from the following mnemonic:
 
 ```
@@ -235,18 +231,18 @@ If you'd like to follow these logs as they're being generated, run:
 docker logs --follow <name of container>
 ```
 
-## Getting Optimism system contract addresses
+## Getting Rollux system contract addresses
 
-If you want to [interact with Optimism system contracts](./system-contracts.md), you'll need to know the addresses of the contracts that are deployed on the network.
+If you want to [interact with Rollux system contracts](./system-contracts.md), you'll need to know the addresses of the contracts that are deployed on the network.
 
 ### Getting L2 contract addresses
 
-L2 contracts are always deployed to the same addresses on every Optimism network.
-You can simply look at [the L2 contract addresses for the mainnet Optimism network](https://github.com/ethereum-optimism/optimism/tree/develop/packages/contracts/deployments/mainnet#layer-2-contracts) and you'll have the addresses for your local environment.
+L2 contracts are always deployed to the same addresses on every Rollux network.
+You can simply look at [the L2 contract addresses for the mainnet Rollux network](https://github.com/SYS-Labs/rollux/tree/develop/packages/contracts/deployments/mainnet#layer-2-contracts) and you'll have the addresses for your local environment.
 
 ### Getting L1 contract addresses
 
-Optimism's L1 contracts are deployed to different addresses on different networks.
+Rollux L1 contracts are deployed to different addresses on different networks.
 However, the addresses for your local environment will always be the same, even if you reset the environment.
 You can get the addresses for your environment with the following command:
 

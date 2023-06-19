@@ -301,7 +301,7 @@ module.exports = {
         }
       ],
       '/docs/developers/': [
-        '/docs/developers/releases.md',
+        //'/docs/developers/releases.md',
         {
           title: 'Building on Rollux',
           children: [

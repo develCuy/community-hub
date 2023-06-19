@@ -7,12 +7,12 @@ lang: en-US
 
 This guide is intended for wallet developers who want to give their users the ability to send transactions on the Rollux network.
 Rollux generally behaves like any other EVM-based chain with the exception of minor discrepancies related to [transaction fees](#transaction-fees).
-These fee discrepancies are an inherent result of the fact that Rollux is a Layer 2 blockchain network that must publish transaction data to Syscoin.
+These fee discrepancies are an inherent result of the fact that Rollux is a Layer 2 blockchain network that must publish transaction data to a Layer 1, in our case Syscoin.
 
 ## Connecting to Rollux
 
 Rollux shares the [Ethereum JSON-RPC API](https://eth.wiki/json-rpc/API) with only [a few minor differences](../developers/build/json-rpc.md).
-You'll find all of the important information about each Optimism network on [our Networks page](../useful-tools/networks.md).
+You'll find all of the important information about each Rollux network on [our Networks page](../useful-tools/networks.md).
 You can choose to connect to Rollux via our rate-limited public endpoints, [private endpoints from infrastructure providers](../useful-tools/networks.md), or [by running your own node](../developers/build/run-a-node/).
 Because of throughput limits, we recommend using private node providers or running your own node for production applications.
 
@@ -30,7 +30,7 @@ A transaction in Rollux can be in one of two states:
 
 There is still work being done on the tooling to easily detect when a given transaction has been published to Syscoin.
 For the moment, we recommend wallets consider transactions final after they are "Sequencer Confirmed".
-Transactions are considered "Sequencer Confirmed" as soon as their transaction receipt shows at least one confirmation.
+Transactions are considered "Sequencer Confirmed" as soon as their transaction receipt shows at least one confirmation. Of course, that happens very quickly, as Rollux itself has a 2 second blocktime.
 
 ## Transaction fees
 

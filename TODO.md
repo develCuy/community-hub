@@ -22,9 +22,15 @@ Rely on design/aesthetics/format as-is for now.
 
 ### In Progress
 
-- [ ] Finish Quick Start > Specific Guides
-- [ ] Finish Dev Docs
+
+- [ ] Dev Docs
 - [ ] Fix broken links
+- [ ] Correct bridge URL links, and Token List.
+- [ ] Finish Standard Bridge
+- [ ] Specify the confirmed local ports for geth in dev-node.md
+- [ ] Finish build/dev-node.md
+- [ ] Finish build/run-a-node.md
+- [ ] Adjust all references to packages @eth-optimism/sdk, @eth-optimism/contracts, etc.
 - [ ] Refactor rollux-tutorial after testnet is redeployed (and redeploy test contracts)
 - [ ] Finish Quick Start > Beginner > Testing on Rollux Test Networks once test ERC-20/721's are available
 
@@ -36,3 +42,4 @@ Rely on design/aesthetics/format as-is for now.
 - [X] Rollux logos/media/branding  
 - [X] Syscoin L1
 - [X] How Rollux Works
+- [X] Quick Start

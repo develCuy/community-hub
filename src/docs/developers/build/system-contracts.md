@@ -1,9 +1,9 @@
 ---
-title: Interacting with Optimism contracts
+title: Interacting with Rollux contracts
 lang: en-US
 ---
 
-Optimism is composed, in part, of a series of smart contracts on both L1 (Ethereum) and L2 (Optimism).
+Rollux is composed, in part, of a series of smart contracts on both L1 (Syscoin) and L2 (Rollux).
 You may want to interact with these contracts for any number of reasons, including:
 
 - Sending messages between L1 and L2
@@ -16,12 +16,11 @@ On this page we'll show you how to work with these contracts directly from other
 ## Finding contract addresses
 
 You'll need to find the address of the particular contract that you want to interact with before you can actually interact with it.
-Check out the [Networks and Connection Details page](../../useful-tools/networks.md) for links to the contract addresses for each network.
-You can also find the addresses for all networks in the [deployments folder](https://github.com/ethereum-optimism/optimism/tree/master/packages/contracts/deployments) of the [`contracts` package](https://github.com/ethereum-optimism/optimism/tree/master/packages/contracts).
+Check out the [Rollux monorepo's deployments folder](https://github.com/SYS-Labs/rollux/tree/develop/packages/contracts-bedrock/deployments) which contains the contract addresses for each network. You can also find them in the [`contracts` package](https://github.com/SYS-Labs/rollux/tree/master/packages/contracts).
 
 ## Interacting from another contract
 
-All you need to interact with the Optimism system contracts from another contract is an address and an interface.
+All you need to interact with the Rollux system contracts from another contract is an address and an interface.
 You can follow [the instructions above](#finding-contract-addresses) to find the address of the contract you want to interact with.
 Now you simply need to import the appropriate contracts.
 
@@ -39,11 +38,11 @@ npm install @eth-optimism/contracts
 Simply import the desired contract or interface from the `@eth-optimism/contracts` package:
 
 ```solidity
-import { SomeOptimismContract } from "@eth-optimism/contracts/path/to/SomeOptimismContract.sol";
+import { SomeRolluxContract } from "@eth-optimism/contracts/path/to/SomeRolluxContract.sol";
 ```
 
-Please note that `path/to/SomeOptimismContract` is the path to the contract [within this folder](https://github.com/ethereum-optimism/optimism/tree/develop/packages/contracts/contracts).
-For example, if you wanted to import the [`L1CrossDomainMessenger`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol) contract, you would use the following import:
+Please note that `path/to/SomeOptimismContract` is the path to the contract [within this folder](https://github.com/SYS-Labs/rollux/tree/develop/packages/contracts/contracts).
+For example, if you wanted to import the [`L1CrossDomainMessenger`](https://github.com/SYS-Labs/rollux/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol) contract, you would use the following import:
 
 ```solidity
 import { L1CrossDomainMessenger } from "@eth-optimism/contracts/L1/messaging/L1CrossDomainMessenger.sol";
@@ -52,7 +51,7 @@ import { L1CrossDomainMessenger } from "@eth-optimism/contracts/L1/messaging/L1C
 ### Getting L2 contract addresses
 
 Addresses of system contracts on the L2 side of the network are the same on every network.
-We provide these addresses as constants within the [`Lib_PredeployAddresses`](https://github.com/ethereum-optimism/optimism/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) contract.
+We provide these addresses as constants within the [`Lib_PredeployAddresses`](https://github.com/SYS-Labs/rollux/blob/develop/packages/contracts/contracts/libraries/constants/Lib_PredeployAddresses.sol) contract.
 
 ## Interacting from the client side
 
@@ -69,12 +68,12 @@ npm install @eth-optimism/contracts
 
 ### Getting contract artifacts, interfaces, and ABIs
 
-You can get the compiler artifact, bytecode, and ABI for any Optimism contract as follows:
+You can get the compiler artifact, bytecode, and ABI for any Rollux contract as follows:
 
 ```ts
 import { getContractDefinition } from '@eth-optimism/contracts'
 
-const artifact = getContractDefinition('SomeOptimismContract')
+const artifact = getContractDefinition('SomeRolluxContract')
 const abi = artifact.abi
 const bytecode = artifact.bytecode
 const deployedBytecode = artifact.deployedBytecode
@@ -85,7 +84,7 @@ Similarly, you can also get [ethers Interface objects](https://docs.ethers.io/v5
 ```ts
 import { getContractInterface } from '@eth-optimism/contracts'
 
-const iface = getContractInterface('SomeOptimismContract')
+const iface = getContractInterface('SomeRolluxContract')
 ```
 
 ### Getting L2 contract addresses

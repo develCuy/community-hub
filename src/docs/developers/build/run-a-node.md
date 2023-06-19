@@ -3,52 +3,37 @@ title: Running a testnet or mainnet node
 lang: en-US
 ---
 
-If you're looking to build an app on Optimism you'll need access to an Optimism node. You have two options - use a hosted node from providers like Alchemy or run your own. 
+If you're looking to build an app on Rollux you'll need access to a Rollux node. You have two options - use a hosted node from providers like Ankr or run your own. 
 
 ## Hosted node providers
 
-You can get a free, hosted one from [any of these providers](../../useful-tools/providers.md) to get up and building quickly. Of them, [Alchemy](https://www.alchemy.com/optimism) is our preferred node provider, and is used to power our [public endpoint](../../useful-tools/networks.md). 
+You can get a free, hosted one from [providers](../../useful-tools/providers.md) to get up and building quickly.
 
-However, you might be interested in running your very own Optimism node.
-Here we'll go over the process of running a testnet or mainnet Optimism node for yourself.
+However, you might be interested in running your very own Rollux node.
+Here we'll go over the process of running a testnet or mainnet Rollux node for yourself.
 
+<!---
 ## Upgrades
 
 If you run a node you need to subscribe to [an update feed](../releases.md) (either [the mailing list](https://groups.google.com/a/optimism.io/g/optimism-announce) or [the RSS feed](https://changelog.optimism.io/feed.xml)) to know when to upgrade. 
 Otherwise, your node will eventually stop working.
+--->
 
 ## Configuration choices
 
 ### Hardware requirements
 
-Replicas need to store the transaction history of Optimism and to run Geth. 
+Replicas need to store the transaction history of Rollux and to run Geth. 
 They need to be relatively powerful machines (real or virtual). 
 We recommend at least 16 GB RAM, and an SSD drive with at least 100 GB free.
 
 ### Source of synchronization
 
-<details>
-<summary><b>Pre-Bedrock (current version)</b></summary>
+The [op-geth](https://community.rollux.com/docs/developers/bedrock-temp/infra/#bedrock-geth) typically synchronizes from other Rollux nodes (https://github.com/SYS-Labs/rollux/blob/develop/specs/exec-engine.md#happy-path-sync), meaning L2, but it can [synchronize from L1](https://github.com/SYS-Labs/rollux/blob/develop/specs/exec-engine.md#worst-case-sync) if necessary.
 
-Prior to Bedrock you choose one of two configurations.
+To synchronize only from L1, you edit the [op-node configuration](https://github.com/SYS-Labs/rollux/blob/develop/specs/rollup-node.md) to set `OP_NODE_P2P_DISABLE` to `true`.
 
-- **Replicas** replicate from L2 (Optimism).
-  Replicas gives you the most up to date information, at the cost of having to trust Optimism's updates.
-
-- **Verifiers** replicate from L1 (Ethereum).
-  Verifiers read and execute transactions from the cannonical block chain. 
-  As a result, the only way for them to have inaccurate information is an [Ethereum reorg](https://www.paradigm.xyz/2021/07/ethereum-reorgs-after-the-merge#post-merge-ethereum-with-proof-of-stake), an extremely rare event. 
-
-</details>
-
-<details>
-<summary><b>Bedrock (coming late 2022)</b></summary>
-
-In Bedrock the [op-geth](https://community.optimism.io/docs/developers/bedrock-temp/infra/#bedrock-geth) typically synchronizes from other Optimism nodes (https://github.com/ethereum-optimism/optimism/blob/develop/specs/exec-engine.md#happy-path-sync), meaning L2, but it can [synchronize from L1](https://github.com/ethereum-optimism/optimism/blob/develop/specs/exec-engine.md#worst-case-sync) if necessary.
-
-To synchronize only from L1, you edit the [op-node configuration](https://github.com/ethereum-optimism/optimism/blob/develop/specs/rollup-node.md) to set `OP_NODE_P2P_DISABLE` to `true`.
-
-When you use RPC to get block information (https://github.com/ethereum-optimism/optimism/blob/develop/specs/rollup-node.md#l2-output-rpc-method), you can specify one of four options for `blockNumber`:
+When you use RPC to get block information (https://github.com/SYS-Labs/rollux/blob/develop/specs/rollup-node.md#l2-output-rpc-method), you can specify one of four options for `blockNumber`:
 
 - an actual block number
 - **pending**: Latest L2 block
@@ -149,10 +134,10 @@ This TypeScript program reads data from an Optimism endpoint and passes it over 
    | DATA_TRANSPORT_LAYER__SERVER_HOSTNAME  | localhost
    | DATA_TRANSPORT_LAYER__SERVER_PORT      | 7878
    | DATA_TRANSPORT_LAYER__SYNC_FROM_L1     | false |    
-   | DATA_TRANSPORT_LAYER__L1_RPC_ENDPOINT  | Get an endpoint from [a service provider](https://ethereum.org/en/developers/docs/nodes-and-clients/nodes-as-a-service/) unless you run a node yourself |
+   | DATA_TRANSPORT_LAYER__L1_RPC_ENDPOINT  | Get a Syscoin RPC endpoint from [Ankr](https://ankr.com) unless you run a node yourself |
    | DATA_TRANSPORT_LAYER__SYNC_FROM_L2     | true |
    | DATA_TRANSPORT_LAYER__L2_RPC_ENDPOINT  | [See here](../../useful-tools/networks/) |
-   | DATA_TRANSPORT_LAYER__L2_CHAIN_ID      | 10 (for a mainnet replica) |
+   | DATA_TRANSPORT_LAYER__L2_CHAIN_ID      | 570 (570=mainnet, 57000=testnet) |
 
    These directions are written with the assumption that you sync from L2, which is faster.
    If you prefer, you can syncronize from L1, which is more secure but slower.
@@ -160,7 +145,7 @@ This TypeScript program reads data from an Optimism endpoint and passes it over 
    `DATA_TRANSPORT_LAYER__SYNC_FROM_L2` as `false`. Also, add this line:
 
    ```
-   DATA_TRANSPORT_LAYER__L1_START_HEIGHT=13596466
+   DATA_TRANSPORT_LAYER__L1_START_HEIGHT=285000
    ```
 
 1. Start the DTL (as a daemon, logging to `~/dtl.log`):
