@@ -18,4 +18,4 @@ The Optimism team continues to make progress on the upgraded fault proof mechani
 
 Currently, the non-profit Syscoin Foundation runs the sole sequencer on Rollux. This does not mean that Syscoin Foundation can censor user transactions. However, it is still desirable to decentralize the sequencer over time, perhaps eliminating the foundation's role entirely by anyone having the ability to participate in the network as a block producer.
 
-SYS Labs researchers are at work to solve decentralized sequencing in a new and novel way, and to implement it with Rollux. The overall goal is to support multiple concurrent sequencers in a manner that is Byzantine fault tolerant, with the same degree of decentralization offered by the L1 design, or as close as possible.
+SYS Labs researchers are at work to solve for decentralized sequencing in a new and novel way, and to implement it with Rollux. The overall goal is to support multiple concurrent sequencers in a manner that is Byzantine fault tolerant, with the same degree of decentralization offered by the L1 design, or as close as possible.

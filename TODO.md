@@ -22,15 +22,17 @@ Rely on design/aesthetics/format as-is for now.
 
 ### In Progress
 
-- [ ] Add Media (Images, embedded videos)
-- [ ] Reword/review PoDA  
-- [ ] Reword/review Finality 
-- [ ] Reword/review Gas  
-- [ ] Reword/review Intro  
-- [ ] Sys logos/media/branding 
+- [ ] Finish Quick Start > Specific Guides
+- [ ] Finish Dev Docs
+- [ ] Fix broken links
+- [ ] Refactor rollux-tutorial after testnet is redeployed (and redeploy test contracts)
+- [ ] Finish Quick Start > Beginner > Testing on Rollux Test Networks once test ERC-20/721's are available
+
 ### Done ✓
 
 - [x] Add and clean up raw text  
 - [x] Add to search (Sys tab still a placeholder)  
-- [X] Add Community Links 
-- [X] Fix broken links 
+- [X] Add Community Links  
+- [X] Rollux logos/media/branding  
+- [X] Syscoin L1
+- [X] How Rollux Works

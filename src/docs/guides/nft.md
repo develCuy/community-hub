@@ -1,15 +1,13 @@
 ---
-title: Creating an Optimistic NFT
+title: Create a Rollux NFT
 lang: en-US
 ---
 
-An NFT ecosystem consists of creators (supply), marketplaces, and buyers/traders (demand) built on top of infrastructures that enable algorithmic generation of art, deployment of smart contracts and access to NFT market intelligence.
+An NFT ecosystem consists of creators (supply), marketplaces, and buyers/traders (demand) built on top of infrastructures that enable algorithmic generation of art, and deployment of smart contracts.
 
-[Click here for statistics about NFTs on Optimism](https://dune.com/oplabspbc/optimism-nft-secondary-marketplaces)
+## The Rollux NFT ecosystem is just getting started!
 
-## The Optimism NFT ecosystem
-
-![The Optimism NFT ecosystem](../../assets/docs/guides/nft/OP-NFT-Ecosystem.jpg)
+<!--- ![The Optimism NFT ecosystem](../../assets/docs/guides/nft/OP-NFT-Ecosystem.jpg)
 
 These tools are available on Optimism:
 
@@ -46,14 +44,24 @@ It is accurate, as far as we know, when written (early January 2023), but new fe
 
 </details>
 
-### Marketplaces
+--->
 
-- [Quix](https://qx.app/)
-- [OpenSea](https://opensea.io/rankings?chain=optimism)
-- [Tofu](https://tofunft.com/optimism)
-- [OptiMarket](https://optimarket.io/)
-- [Circular Art](https://www.circularart.xyz/)
+That means Rollux represents a great opportunity to get in at the ground level of an emerging NFT ecosystem.
 
+### [Luxy](https://luxy.io) Marketplace
+
+Luxy is Rollux's official NFT marketplace. Luxy is multichain and provides a state-of-the-art [launchpad](https://luxy.io/launchpad), along with tools for creators. Check out Luxy's [documentation portal](https://docs.luxy.io/help-center/) to learn a lot more.  
+
+Join the Luxy community!  
+
+[Twitter](https://twitter.com/Luxy_io)  
+[Discord](https://discord.gg/luxy)  
+[Instagram](https://instagram.com/luxy_nft)  
+[Telegram](https://t.me/luxyio)  
+[Medium](https://medium.com/@luxy-io)  
+
+
+<!---
 ### Transaction aggregator
 
 - [Bluesweep](https://www.bluesweep.xyz/)
@@ -62,10 +70,11 @@ It is accurate, as far as we know, when written (early January 2023), but new fe
 
 - [Backed](https://www.withbacked.xyz/network/optimism) lets you use NFTs as collateral
 
-### NFT data APIs
+--->
 
-- [Alchemy](https://docs.alchemy.com/reference/nft-api-quickstart)
-- [SimpleHash](https://simplehash.com/)
+### NFT data API
+
+- [Ankr](https://www.ankr.com/docs/advanced-api/quickstart/overview/)
 
 
 
