@@ -36,9 +36,12 @@ module.exports = {
       offset: -200,
     },
     algolia: {
-      appId: '8LQU4WGQXA',
-      apiKey: '2c1a86142192f96dab9a5066ad0c1d50',
-      indexName: 'optimism'
+      //appId: '8LQU4WGQXA',
+      //apiKey: '2c1a86142192f96dab9a5066ad0c1d50',
+      //indexName: 'optimism'
+        appId: '5OFZ30CWBS',
+        apiKey: 'b353349f71a345d76d653c5aaa04996f',
+        indexName: 'dev_rolluxDocs'
     },
     nav: [
       /* When you update here, don't forget to update the tiles
@@ -208,14 +211,14 @@ module.exports = {
           title: "Beginner",
           children: [
             [
-              "https://github.com/ethereum-optimism/optimism-tutorial/tree/main/getting-started",
-              "Developing smart contracts on Optimism"
+              "https://github.com/sys-labs/rollux-tutorial/tree/main/getting-started",
+              "Developing smart contracts on Rollux"
             ],            
             '/docs/guides/nft.md',            
             '/docs/guides/testing.md',
             [
-              'https://docs.alchemy.com/reference/optimism-sdk-examples',
-              'Using Alchemy to query the Optimism blockchain'
+              'https://www.ankr.com/docs/#advanced-apissdks',
+              'Using ANKR Advanced API/SDK to query Rollux'
             ]
           ],
           collapsable: true,
@@ -224,28 +227,28 @@ module.exports = {
           title: "Getting your dapp on Rollux",
           children: [
             [
-              "https://github.com/ethereum-optimism/optimism-tutorial/tree/main/cross-dom-bridge-eth",
-              "Bridging ETH with the Optimism SDK"
+              "https://github.com/sys-labs/rollux-tutorial/tree/main/cross-dom-bridge-eth",
+              "Bridging SYS with the Rollux SDK"
             ],
             [
-              "https://github.com/ethereum-optimism/optimism-tutorial/tree/main/cross-dom-bridge-erc20",
-              "Bridging ERC-20 tokens with the Optimism SDK"
+              "https://github.com/sys-labs/rollux-tutorial/tree/main/cross-dom-bridge-erc20",
+              "Bridging ERC-20 tokens with the Rollux SDK"
             ],
             [
-              "https://github.com/ethereum-optimism/optimism-tutorial/tree/main/sdk-view-tx",
+              "https://github.com/sys-labs/rollux-tutorial/tree/main/sdk-view-tx",
               "View transactions between layers"
             ],
             [
-              "https://github.com/ethereum-optimism/optimism-tutorial/tree/main/standard-bridge-standard-token",
-              "Creating an ERC20 Token on L2 to represent one on L1"
+              "https://github.com/sys-labs/rollux-tutorial/tree/main/standard-bridge-standard-token",
+              "Creating an ERC-20 Token on L2 to represent one on L1"
             ],
             [
-              "https://github.com/ethereum-optimism/optimism-tutorial/tree/main/standard-bridge-custom-token",
-              "Registering a Custom ERC20 Token on L2"
+              "https://github.com/sys-labs/rollux-tutorial/tree/main/standard-bridge-custom-token",
+              "Registering a Custom ERC-20 Token on L2"
             ],
             [
-              "https://github.com/ethereum-optimism/optimism-tutorial/tree/main/sdk-estimate-gas",
-              "Estimate the costs of an Optimistic (L2) transaction"
+              "https://github.com/sys-labs/rollux-tutorial/tree/main/sdk-estimate-gas",
+              "Estimate the costs of a Rollux (L2) transaction"
             ]
           ],
           collapsable: true,
@@ -303,7 +306,7 @@ module.exports = {
           title: 'Building on Rollux',
           children: [
             [
-              'https://github.com/ethereum-optimism/optimism-tutorial/tree/main/getting-started#development-stacks',
+              'https://github.com/sys-labs/rollux-tutorial/tree/main/getting-started#development-stacks',
               "Development stacks"
             ],
             '/docs/developers/build/transaction-fees.md',
@@ -347,10 +350,13 @@ module.exports = {
           children: [
             '/docs/sdk/js-client.md',
             [
-              'https://github.com/ethereum-optimism/optimism/tree/develop/packages/contracts/docs',
-              'Optimism Contracts'
+              'https://github.com/SYS-Labs/rollux/tree/develop/packages/contracts/docs',
+              'Rollux Contracts'
             ],
-            '/docs/sdk/alchemy-sdk.md'           
+            [
+              'https://www.ankr.com/docs/#advanced-apissdks',
+              'Ankr API/SDK'
+            ],           
           ]
         },
         '/docs/developers/media.md',

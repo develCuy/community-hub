@@ -3,11 +3,11 @@ title: Introduction to Syscoin
 lang: en-US
 ---
 
-Rollux is fast, crazy inexpensive, and attracts a lot of attention! What you might not realize is you should be just as excited about SYS as you are about Rollux. Once you see *why* Rollux is built on Syscoin, and get an overview of what it has to offer, we think you will be. After all, the great things Rollux provides would not be possible without an appropriate L1 supporting it from beneath. 
+Rollux is fast, crazy inexpensive, and attracts a lot of attention! Once you see *why* Rollux is built on Syscoin, and get an overview of what Syscoin has to offer, we think you will be just as excited about SYS. After all, the great things Rollux provides would not be achievable without the appropriate L1 supporting it from beneath. 
 
 ## Syscoin in a Nutshell
 
-Syscoin is designed as the ideal settlement layer and data availability layer for modular scaling technologies like rollups. It provides a coordinated dual-chain stack;
+Syscoin is designed as the ideal L1 and data availability layer for modular scaling technologies like rollups. It provides a coordinated dual-chain stack;
 
 1. Syscoin native (UTXO, Bitcoin-based)
 2. Syscoin NEVM (Network-Enhanced Virtual Machine) which provides an EVM
@@ -15,6 +15,10 @@ Syscoin is designed as the ideal settlement layer and data availability layer fo
 **Syscoin makes rollups more secure with its Bitcoin auxPoW settlement, multi-quorum finality, and efficient data availability in the form of [PoDA (Proof-of-Data-Availability)](PoDA.md).** PoDA is the very first complete L1 data availability solution ever built and deployed to a main network. Furthermore, Syscoin provides finality in the form of a multi-quorum BLS signature scheme as an enhancement on top of Nakamoto consensus which adds resistance selfish mining, and keeps the chain resilient in the face of non-final scenarios by enabling the protocol to resolve down to pure Nakamoto consensus instead of forking/stopping in those situations, unlike Ethereum's Casper.
 
 **PoDA and multi-quorum finality are unique innovations of Syscoin.**
+
+<div align="center">
+<img width="800" src="../../assets/docs/sys/overall.png">
+</div>
 
 ## Super bullish on modularity
 
@@ -72,7 +76,7 @@ PoDA’s design considers proving and archiving as separate concerns. With PoDA,
 Validium (fully offchain DA) is also available as an alternative to PoDA for less-critical applications where the focus might be on even lower cost and higher throughput by trading-off Layer 1 data security. However, in the case of Syscoin PoDA, Layer 1 data security is quite affordable and PoDA nodes can store raw data offchain if they wish while still gaining the security of onchain state and proving.
 
 
-## [Inherited L1 Security with L2 Variable Gas Rate Dominance](Gas.md)
+### [Inherited L1 Security with L2 Variable Gas Rate Dominance](Gas.md)
 
 With PoDA, savings in terms of gas units ranges from 315000x less gas than native Ethereum to 16500x cheaper than Optimism Bedrock on Ethereum today.
 
