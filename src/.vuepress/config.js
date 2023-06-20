@@ -22,7 +22,6 @@ module.exports = {
     logo: '/assets/logos/logo.png',
     docsDir: 'src',
     docsRepo: 'https://github.com/bstr156/community-hub',
-    base: '/community-hub/',
     docsBranch: 'main',
     lastUpdated: false,
     darkmode: 'disable',
