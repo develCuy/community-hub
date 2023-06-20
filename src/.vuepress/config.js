@@ -4,6 +4,7 @@ const path = require('path')
 module.exports = {
   title: 'Rollux Docs',
   description: description,
+  base: '/community-hub/',
 
   head: [ 
     ['link', { rel: 'manifest', href: '/manifest.json' }],
@@ -19,8 +20,7 @@ module.exports = {
   themeConfig: {
 
     contributor: false,
-    base: '/community-hub/',
-    hostname: 'https://sys-labs.github.io/community-hub',
+    hostname: 'https://sys-labs.github.io',
     logo: '/assets/logos/logo.png',
     docsDir: 'src',
     docsRepo: 'https://github.com/sys-labs/community-hub',
