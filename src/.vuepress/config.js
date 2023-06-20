@@ -18,11 +18,10 @@ module.exports = {
   theme: path.resolve(__dirname, './theme'),
   themeConfig: {
     contributor: false,
-    hostname: 'https://bstr156.github.io/community-hub',
+    hostname: 'https://bstr156.github.io',
     logo: '/assets/logos/logo.png',
     docsDir: 'src',
     docsRepo: 'https://github.com/bstr156/community-hub',
-    base: '/community-hub/',
     docsBranch: 'main',
     lastUpdated: false,
     darkmode: 'disable',
