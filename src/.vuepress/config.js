@@ -20,10 +20,10 @@ module.exports = {
 
     contributor: false,
     base: '/community-hub/',
-    hostname: 'https://bstr156.github.io',
+    hostname: 'https://sys-labs.github.io',
     logo: '/assets/logos/logo.png',
     docsDir: 'src',
-    docsRepo: 'https://github.com/bstr156/community-hub',
+    docsRepo: 'https://github.com/sys-labs/community-hub',
     docsBranch: 'main',
     lastUpdated: false,
     darkmode: 'disable',
