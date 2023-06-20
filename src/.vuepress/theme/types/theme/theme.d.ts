@@ -53,6 +53,7 @@ export interface HopeThemeConfig
 
   /** 站点地址 */
   hostname?: string;
+  base?: string;
 
   /**
    * 文章显示的默认作者
