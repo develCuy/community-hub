@@ -17,6 +17,7 @@ module.exports = {
 
   theme: path.resolve(__dirname, './theme'),
   themeConfig: {
+
     contributor: false,
     base: '/community-hub/',
     hostname: 'https://bstr156.github.io',
