@@ -50,7 +50,7 @@ The ERC-20 contracts on Rollux function the same way they do on Syscoin NEVM and
 
 ### Transaction fees
 
-Most of the cost of an Optimism transaction is not the gas consumed by the transaction itself, but the cost of writing the transaction to Syscoin. That cost is deducted automatically from the user's balance on Rollux. If you charge your users the cost of withdrawals, you have to account for it.
+Most of the cost of a Rollux transaction is not the gas consumed by the transaction itself, but the cost of writing the transaction to Syscoin. That cost is deducted automatically from the user's balance on Rollux. If you charge your users the cost of withdrawals, you may have to account for it. In any case, the cost is typically very low.
 
 [You can read more about this subject here](../developers/build/transaction-fees.md).
 The relevant code is [here](https://github.com/SYS-Labs/rollux-tutorial/tree/main/sdk-estimate-gas).
@@ -60,12 +60,11 @@ The relevant code is [here](https://github.com/SYS-Labs/rollux-tutorial/tree/mai
 
 As a centralized exchange, there will be times that withdrawals of SYS or an ERC-20 token on either Rollux or Syscoin NEVM exceed deposits and you need to transfer assets. 
 To do that you use a bridge or a gateway. 
-We have a [standard gateway](https://rollux.com/bridge) that receives assets on L1 (Syscoin NEVM mainnet), and mints the equivalent asset on Optimism. 
+We have a [standard gateway](https://rollux.com/bridge) that receives assets on L1 (Syscoin NEVM mainnet), and mints the equivalent asset on Rollux. 
 When a user wants to withdraw the assets back to L1, the bridge burns the asset on L2 and releases it to the user on L1. If you want to use this gateway automatically, [follow this tutorial for SYS](https://github.com/SYS-Labs/rollux-tutorial/tree/main/cross-dom-bridge-eth) or [this one for ERC-20 tokens](https://github.com/SYS-Labs/rollux-tutorial/tree/main/cross-dom-bridge-erc20).
 
-Note that while L1 to L2 transactions typically take minutes, L2 to L1 transaction on the gateway require [a seven day challenge period](https://help.optimism.io/hc/en-us/articles/4411895558171-Why-do-I-need-to-wait-a-week-when-moving-assets-out-of-Optimism-).
-
-Alternatively, you can use a [third party bridge](https://www.optimism.io/apps/bridges). These bridges usually rely on liquidity pools to allow for faster withdrawals and support multiple L2 chains. However, their token selection might be more limited and they are typically not as decentralized as our gateway.
+Note that while L1 to L2 transactions typically take minutes, L2 to L1 transaction on the gateway require a seven day challenge period which is an artifact of Rollux being an optimistic rollup.
+Alternatively, you can use a third party bridge. These bridges usually rely on liquidity pools to allow for faster withdrawals and support multiple L2 chains. However, their token selection might be more limited and they are typically not as decentralized as our gateway.
 
 When an ERC-20 token does not have a Rollux equivalent you can create one. 
 If there is no need for custom business logic, you can [follow the steps in this tutorial](https://github.com/SYS-Labs/rollux-tutorial/tree/main/standard-bridge-standard-token).
@@ -74,4 +73,4 @@ If you need to implement some kind of custom logic, [see this tutorial](https://
 
 ## Audit reports
 
-* For a full list of audit reports, visit [GitHub](https://github.com/SYS-Labs/rollux/tree/develop/technical-documents/security-reviews). 
+* For a list of audit reports, visit [GitHub](https://github.com/SYS-Labs/rollux/tree/develop/technical-documents/security-reviews). In addition to Optimism's multiple audits, Rollux has been audited to the extent of the differences between Rollux and Optimism.

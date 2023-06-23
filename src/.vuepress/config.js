@@ -297,7 +297,10 @@ module.exports = {
           title: 'Protocol Specs',
           children: [
             '/docs/protocol/protocol-2.0.md',
-            '/docs/protocol/compressed-ctc.md'
+            [
+              "https://github.com/sys-labs/rollux/blob/33741760adce92c8bdf61f693058144bb6986e30/specs/derivation.md#batch-submission",
+              "Sequencing and Batch Submission Overview"
+            ],
           ],
           collapsable: false,  
         }
@@ -373,6 +376,17 @@ module.exports = {
             '/docs/developers/bedrock/metrics.md'
           ]
         }
+      ],
+      '/docs/legal/': [
+        {
+          title: '',
+          children: [
+            '/docs/legal/data-privacy-policy.md',
+            '/docs/legal/community-notice-1.md',
+            '/docs/legal/portal-terms.md',
+          ],
+          collapsable: false,          
+        },
       ],
     }
   },

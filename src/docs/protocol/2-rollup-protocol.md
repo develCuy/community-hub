@@ -11,7 +11,7 @@ Then we'll explain *how* Rollux is built as an optimistic rollup and why we beli
 
 Rollux is an "optimistic rollup," which is basically just a fancy way of describing a blockchain that piggy-backs off of the security of another "parent" blockchain.
 Specifically, optimistic rollups take advantage of the consensus mechanism (like PoW or PoS) of their parent chain instead of providing their own.
-In Rollux's case this parent blockchain is Syscoin, which is PoW at its base.
+In Rollux's case this parent blockchain is Syscoin. That means Rollux inherits the upstream security of Syscoin, which is merge-mined by the most powerful PoW network on the planet, Bitcoin! Furthermore, Syscoin L1 provides decentralized finality on top of Nakamoto consensus which makes it highly resistant to 51% attacks, and Syscoin provides data availability with PoDA. You can find out more about Syscoin and what makes it special [here](../sys/README.md)!
 
 
 ## Block storage
@@ -54,7 +54,7 @@ Rollux block production at present is primarily managed by a single party, calle
 - Constructing and executing L2 blocks.
 - Submitting user transactions to L1.
 
-Being based upon Optimism Bedrock, the sequencer does have a mempool, similar to Syscoin NEVM or Ethereum, but the mempool is private to avoid opening opportunities for MEV. Blocks are produced every two seconds, regardless of whether they are empty (no transactions), filled up to the block gas limit with transactions, or anything in between.
+The sequencer does have a mempool, similar to Syscoin NEVM or Ethereum, but the mempool is private to avoid opening opportunities for MEV. Blocks are produced every two seconds, regardless of whether they are empty (no transactions), filled up to the block gas limit with transactions, or anything in between.
 
 Transactions get to the sequencer in two ways:
 
@@ -62,7 +62,7 @@ Transactions get to the sequencer in two ways:
    Every L2 block is identified by the "epoch" (the L1 block to which it corresponds, which typically has happened a few minutes before the L2 block) and its serial number within that epoch.
    The first block of the epoch includes all the deposits that happened in the L1 block to which it corresponds.
    If the sequencer attempts to ignore a legitimate L1 transaction it ends up with a state that is inconsistent with the verifiers, same as if the sequencer tried to fake the state by other means.
-   This provides Optimism with L1 Syscoin level censorship resistance.
+   This provides Rollux with L1 Syscoin level censorship resistance.
    You can read more about this mechanism [is the protocol specifications](https://github.com/sys-labs/rollux/blob/develop/specs/derivation.md#deriving-the-transaction-list).
 
 1. Transactions submitted directly to the sequnecer. 
@@ -110,7 +110,7 @@ Withdrawals (the term is used for any Rollux to Syscoin message, regardless of w
 
 1. Wait for the next output root to be submitted to L1 (you can see this on [the SDK](../sdk/js-client.md)) and then submit the withdrawal proof using `proveWithdrawalTransaction`.
    This new step enables off-chain monitoring of the withdrawals, which makes it easier to identify incorrect withdrawals or output roots.
-   This protects Optimism users against a whole class of potential bridge vulnerabilities.
+   This protects Rollux users against a whole class of potential bridge vulnerabilities.
 
 1. After the fault challenge period ends (a week on mainnet, less than that on the test network), finalize the withdrawal.
 
@@ -130,6 +130,6 @@ If the commitment is successfully challenged, then it is removed from the `State
 It's important to note that a successful challenge does not roll back Rollux itself, only the published commitments about the state of the chain.
 The ordering of transactions and the state of Rollux is unchanged by a fault proof challenge.
 
-The fault proof process is currently undergoing major redevelopment as a side-effect of the November 11th [EVM Equivalence](https://medium.com/ethereum-optimism/introducing-evm-equivalence-5c2021deb306) update.
+The fault proof process is currently undergoing major redevelopment as a side-effect of the EVM-equivalence update.
 You can read more about this process within the [Protocol specs](../protocol/README.md) section of this website.
 

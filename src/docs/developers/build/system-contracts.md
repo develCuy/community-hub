@@ -26,7 +26,7 @@ Now you simply need to import the appropriate contracts.
 
 ### Installing via NPM or Yarn
 
-We export a package [`@eth-optimism/contracts`](https://www.npmjs.com/package/@eth-optimism/contracts?activeTab=readme) that makes it easy to use the Optimism contracts within NPM or Yarn based projects.
+We export a package [`@eth-optimism/contracts`](https://www.npmjs.com/package/@eth-optimism/contracts?activeTab=readme) that makes it easy to use the Rollux contracts within NPM or Yarn based projects.
 Install the package as follows:
 
 ```
@@ -41,7 +41,7 @@ Simply import the desired contract or interface from the `@eth-optimism/contract
 import { SomeRolluxContract } from "@eth-optimism/contracts/path/to/SomeRolluxContract.sol";
 ```
 
-Please note that `path/to/SomeOptimismContract` is the path to the contract [within this folder](https://github.com/SYS-Labs/rollux/tree/develop/packages/contracts/contracts).
+Please note that `path/to/SomeRolluxContract` is the path to the contract [within this folder](https://github.com/SYS-Labs/rollux/tree/develop/packages/contracts/contracts).
 For example, if you wanted to import the [`L1CrossDomainMessenger`](https://github.com/SYS-Labs/rollux/blob/develop/packages/contracts/contracts/L1/messaging/L1CrossDomainMessenger.sol) contract, you would use the following import:
 
 ```solidity
@@ -55,11 +55,11 @@ We provide these addresses as constants within the [`Lib_PredeployAddresses`](ht
 
 ## Interacting from the client side
 
-Just like when interacting from another contract, we've created a few packages that make it easy to interact with the Optimism system contracts from the client side.
+Just like when interacting from another contract, we've created a few packages that make it easy to interact with the ORollux system contracts from the client side.
 
 ### Installing via NPM or Yarn
 
-You can use the [`@eth-optimism/contracts`](https://www.npmjs.com/package/@eth-optimism/contracts?activeTab=readme) package to interact with the Optimism system contracts from a JavaScript or TypeScript based project.
+You can use the [`@eth-optimism/contracts`](https://www.npmjs.com/package/@eth-optimism/contracts?activeTab=readme) package to interact with the Rollux system contracts from a JavaScript or TypeScript based project.
 Install the package as follows:
 
 ```

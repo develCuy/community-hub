@@ -4,7 +4,7 @@ lang: en-US
 ---
 
 It's important to note that there are various minor discrepancies between the behavior of Rollux and Syscoin NEVM or Ethereum.
-You should be aware of these descrepancies when building apps on top of Optimism.
+You should be aware of these descrepancies when building apps on top of Rollux.
 
 ## Opcode Differences
 
@@ -102,12 +102,13 @@ But it is nearly impossible to create two that are different by a specified amou
 
 ## Blocks
 
-There are several differences in the way blocks are produced between L1 Syscoin and Rollux.
+There are several differences in the way blocks are produced between Syscoin L1 and Rollux.
 
 
-| Parameter           | L1 Ethereum | Rollux |
+| Parameter           | Syscoin L1 | Rollux |
 | - | - | - |
 | Time between blocks (secs) | 150 (1) | 2 |
+| Block target size (gas) | 4,000,000 | 15,000,000 |
 | Block maximum size (gas) | 8,000,000 | 30,000,000 | 
 
 (1) This is the average blocktime on Syscoin L1 (2.5 minutes)
