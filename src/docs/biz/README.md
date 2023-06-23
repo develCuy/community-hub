@@ -5,7 +5,7 @@ lang: en-US
 
 Welcome! We're thrilled you're launching on Rollux. 
 
-If you haven't filled out the [get started form]() please do so prior to reading this.
+If you haven't filled out the [get started form](https://wkf.ms/43MUo0C) please do so prior to reading this.
 
 We are excited for your deployment onto Rollux! 
 You will be welcomed by a great community 🫂🫂. Make sure to jump into the `#🔨│builder-general` [Discord](https://discord.gg/rollux/) channel ⚙️⚙️!

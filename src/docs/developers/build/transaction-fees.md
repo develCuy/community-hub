@@ -23,7 +23,7 @@ l2_execution_fee = transaction_gas_price * l2_gas_used
 ```
 
 The amount of L2 gas used depends on the particular transaction that you're trying to send.
-Thanks to EVM equivalence, transactions typically use approximately the same amount of gas on Optimism as they do on Ethereum.
+Thanks to EVM equivalence, transactions typically use approximately the same amount of gas on Rollux as they do on Syscoin or Ethereum.
 
 ### The L1 data fee
 
@@ -32,7 +32,7 @@ This step is crucial to the security properties of Rollux because it means that 
 It's what makes Rollux an L2.
 
 Users on Rollux have to pay for the cost of submitting their transactions to Syscoin.
-We call this the **L1 data fee**, and it's the primary discrepancy between Rollux and Syscoin. Because of [PoDA (Proof of Data Availability)](../sys/PoDA.md), the L1 data fee with Rollux is typically very low, lower in fact than what you would pay for using Optimism on Ethereum.
+We call this the **L1 data fee**, and it's the primary discrepancy between Rollux and Syscoin. Because of [PoDA (Proof of Data Availability)](../sys/PoDA.md), the L1 data fee with Rollux is typically very low, much lower in fact than what you would pay for using Optimism on Ethereum today.
 
 This fee is based on four factors:
 
@@ -59,7 +59,7 @@ You can read the parameter values from the [gas oracle contract](https://explore
 Syscoin has limited support for adding custom transaction types.
 As a result, unlike the L2 execution fee, **users are not able to set limits for the L1 data fee that they may be charged**.
 The L1 gas price used to charge the data fee is automatically updated when new data is received from Syscoin.
-**Similar to Optimism on Ethereum, changes in gas costs on Syscoin can mean users pay a higher or lower-than-estimated L1 data fee, by up to 25%. This difference is capped at 25%.**
+**Changes in gas costs on the Syscoin L1 can mean users pay a higher or lower-than-estimated L1 data fee, by up to 25%. This difference is capped at 25%.**
 :::
 
 

@@ -14,7 +14,7 @@ features:
   - title: How Rollux works 
     icon: info-square 
     details: What is Rollux.
-    link: /docs/sys/
+    link: /docs/protocol/
 
   - title: Key differences 
     icon: info-square 
