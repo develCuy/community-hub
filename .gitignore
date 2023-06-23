@@ -15,4 +15,6 @@ yarn.lock
 .yarn/
 .yarn
 .yarnrc.yml
+deploy-test.sh
+deploy-prod.sh
 
