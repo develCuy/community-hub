@@ -3,7 +3,7 @@ home: true
 icon: home
 title: Home
 heroImage: /assets/logos/header-rollux.png
-heroText: The Rollux Docs
+heroText: false
 
 features:
   - title: Quick Start
