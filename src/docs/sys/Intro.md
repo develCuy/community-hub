@@ -112,7 +112,7 @@ More activity on the rollup brings faster settlement, to a max rate of once ever
 
 
 **Q. "How do I set up a Rollux P2P replica node?"**  
-A. **[Guide](https://github.com/sidhujag/optimism/blob/develop/ops-bedrock/P2P.md)** is available. Based on Optimism Bedrock requirements, the recommended hardware is a minimum of 16GB RAM and at least 100GB of free SSD space. In order to be accepted by the network you will need a P2P key, Peer IDs and their IPs. Reach out to Syscoin Foundation for this information.
+A. **[Guide](https://github.com/sys-labs/rollux/blob/develop/ops-bedrock/P2P.md)** is available. Based on Optimism Bedrock requirements, the recommended hardware is a minimum of 16GB RAM and at least 100GB of free SSD space. In order to be accepted by the network you will need a P2P key, Peer IDs and their IPs. Reach out to Syscoin Foundation for this information.
 
 
 **Q. "What RPC/WSS Methods/Subscriptions are available?**  

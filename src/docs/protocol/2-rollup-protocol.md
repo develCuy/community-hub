@@ -16,7 +16,7 @@ In Rollux's case this parent blockchain is Syscoin. That means Rollux inherits t
 
 ## Block storage
 
-<details>
+<details open>
 <summary><b>Syscoin L1 Data Availability for Rollux</b></summary>
 Unlike Optimism which must expensively store blocks on the Ethereum L1 as calldata, Rollux L2 blocks are stored via Syscoin's Layer 1 PoDA protocol (Proof-of-Data-Availability). A proof of the block is stored on Syscoin's native (UTXO) blockchain, and the entirety of the raw block data is stored in the cloud via Syscoin full nodes that also function as PoDA cloud clients.
 
@@ -39,7 +39,7 @@ Go compare Rollux's and Optimism's approaches to data availability firsthand by 
 
 </details>  
 
-<details>
+<details open>
 <summary><b>Rollux L2 Data Availability for supporting L3 and beyond (fractal scaling)</b></summary>
 
 Another key differentiator in Rollux's favor is that it is already primed to support L3s and fractal scaling with proper data availability. This is because Rollux offers its own implementation of PoDA natively. This means other layers can use Rollux for data availability. Rollux PoDA handles data storage in a similar manner as Syscoin, with the added benefits of more throughput and even lower costs. Fractal layers using Rollux also inherit the security of Syscoin's L1, as Rollux stores its own block data there. 

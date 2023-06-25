@@ -49,7 +49,11 @@ module.exports = {
       /* When you update here, don't forget to update the tiles
          in src/README.md */
       {
-        text: "Quick Start",
+        text: "Help Center",
+        link: '/docs/help/'
+      },      
+      {
+        text: "Dev Quick Start",
         link: '/docs/guides/'
       },      
       {
@@ -61,7 +65,7 @@ module.exports = {
         link: '/docs/developers/',
       },      
       {
-        text: 'Support',
+        text: 'Project Support',
         link: '/docs/biz/'        
       },
       {
@@ -83,6 +87,10 @@ module.exports = {
       {
         text: 'Contribute',
         link: '/docs/contribute/',
+      },
+      {
+        text: 'Legal',
+        link: '/docs/legal/',
       },
 
       {
@@ -117,7 +125,7 @@ module.exports = {
           }
          
         ]
-      }
+      },
     ],
     searchPlaceholder: 'Search the docs',
     sidebar: {    
@@ -266,6 +274,41 @@ module.exports = {
         },        
 
       ],
+      '/docs/help/': [
+        {
+          title: "Getting Started",
+          children: [
+            '/docs/help/start-using-rollux-mainnet.md',     
+            '/docs/help/connect-pali.md',            
+            '/docs/help/connect-metamask.md',
+            '/docs/help/start-using-rollux-testnet.md'
+          ],
+          collapsable: true,
+        },
+        {
+          title: "Using Rollux Mainnet",
+          children: [
+            '/docs/help/start-using-rollux-mainnet.md',     
+            '/docs/help/connect-pali.md',            
+            '/docs/help/connect-metamask.md',
+            '/docs/help/start-using-rollux-testnet.md'
+          ],
+          collapsable: true,
+        },
+        {
+          title: "Other Topics",
+          children: [
+            '/docs/help/start-using-rollux-mainnet.md',     
+            '/docs/help/connect-pali.md',            
+            '/docs/help/connect-metamask.md',
+            '/docs/help/start-using-rollux-testnet.md'    
+          ],
+          collapsable: true,
+        }, 
+        
+        '/docs/help/get-support.md',
+
+      ],
       '/docs/security-model/': [
         '/docs/security-model/optimism-security-model.md',
         '/docs/security-model/bounties.md',
@@ -378,15 +421,11 @@ module.exports = {
         }
       ],
       '/docs/legal/': [
-        {
-          title: '',
-          children: [
+
             '/docs/legal/data-privacy-policy.md',
             '/docs/legal/community-notice-1.md',
             '/docs/legal/portal-terms.md',
-          ],
-          collapsable: false,          
-        },
+
       ],
     }
   },

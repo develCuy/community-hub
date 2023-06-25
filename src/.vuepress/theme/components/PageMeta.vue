@@ -17,8 +17,8 @@
             </a>
           </li>
           <li>
-            <a href="https://github.com/syscoin/" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-github"></i> Github 
+            <a href="https://github.com/sys-labs/rollux/contribute" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i> Contribute to Rollux 
             </a>
           </li>
         </ul>
@@ -28,8 +28,8 @@
         <span class="footer-section-header">Still need help?</span>
         <ul>
           <li>
-            <a href="https://syscoin.org/contact" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-discord"></i> Community
+            <a href="https://discord.gg/rollux" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-discord"></i> Rollux Community
             </a>
           </li>
           <li>

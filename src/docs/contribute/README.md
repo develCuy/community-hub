@@ -1,5 +1,5 @@
 ---
-title: Contribute to Optimism
+title: Contribute to Rollux
 lang: en-US
 ---
 
@@ -9,19 +9,16 @@ There are plenty of ways to contribute, in particular we appreciate support in t
 
 ## Code contributions
 
-The Optimism codebase is maintained in a monorepo at [https://github.com/ethereum-optimism/optimism](https://github.com/ethereum-optimism/optimism). It's a [collection of packages](https://github.com/ethereum-optimism/optimism#directory-structure) all requiring different skills to maintain and evolve ranging from NodeJS and TypeScript, Solidity and EVM, Go and Geth to Docker and Kubernetes. The following are good entry points into using your coding skills to help us build Optimism:
+The Rollux codebase is maintained in a monorepo at [https://github.com/sys-labs/rollux](https://github.com/sys-labs/rollux). It's a [collection of packages](https://github.com/sys-labs/rollux#directory-structure) all requiring different skills to maintain and evolve ranging from NodeJS and TypeScript, Solidity and EVM, Go and Geth to Docker and Kubernetes. The following are good entry points into using your coding skills to help us build Rollux:
 
-- Reporting issues. For security issues see [Security policy](https://github.com/ethereum-optimism/.github/blob/master/SECURITY.md).
-- Participate in the [Bug Bouty programme](https://immunefi.com/bounty/optimism/).
-- Fixing and responding to existing issues. You can start off with those tagged ["good first issue"](https://github.com/ethereum-optimism/optimism/contribute) which are meant as introductory issues for external contributors.
-  Contributions are rewarded with a cool [GitPOAP](https://www.gitpoap.io/gp/1035).
-- Work on open [bounties on Gitcoin](https://gitcoin.co/ethereum-optimism).
+- Reporting issues. For security issues Rollux echoes [Optimism's security policy](https://github.com/ethereum-optimism/.github/blob/master/SECURITY.md).
+- If you find an Optimism-specific bug, make sure to participate in their [Bug Bouty programme](https://immunefi.com/bounty/optimism/).
+- Fixing and responding to existing issues. You can start off with those tagged ["good first issue"](https://github.com/sys-labs/rollux/contribute) which are meant as introductory issues for external contributors. If you don't see any, check back!
 
 ::: tip
-Following the guidelines on [Contributing](https://github.com/ethereum-optimism/optimism/blob/master/CONTRIBUTING.md) and [Code of Conduct](https://github.com/ethereum-optimism/.github/blob/master/CODE_OF_CONDUCT.md) in all your interactions with the project will ensure your contributions are processed by the team.
+Following the guidelines on [Contributing](https://github.com/sys-labs/rollux/blob/master/CONTRIBUTING.md) to Rollux and Optimism's [Code of Conduct](https://github.com/ethereum-optimism/.github/blob/master/CODE_OF_CONDUCT.md) in all your interactions with the project will ensure your contributions are processed by the team.
 :::
 
 ## Community contributions
-- Pick an idea from the [project ideas list](https://github.com/ethereum-optimism/optimism-project-ideas) to start building
-- Improve the [community site](https://community.optimism.io/) [documentation](https://github.com/ethereum-optimism/community-hub) or [tutorials](https://github.com/ethereum-optimism/optimism-tutorial).
-- Become an "Optimizer" and answer questions in the [Optimism Discord](https://discord-gateway.optimism.io).
+- Improve the [documentation](https://github.com/sys-labs/community-hub), [dev tutorials](https://github.com/sys-labs/rollux-tutorial) or [help articles](https://github.com/sys-labs/rollux-help).
+- Answer questions in the [Rollux Discord](https://discord.gg/rollux).
