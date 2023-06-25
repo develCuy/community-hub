@@ -22,6 +22,7 @@ Such RPCs are either totally unsupported, or will return nonsensical values.
 | Chain ID | **`570`** |
 | Explorer | **[https://explorer.rollux.com](https://explorer.rollux.com)** |
 | HTTP Endpoint<sup>1</sup> | We recommend [Ankr](https://www.ankr.com). Syscoin Foundation also provides this endpoint: **`https://rpc.rollux.com`.** _But it is not for production systems._   |
+| WSS Endpoint | We recommend [Ankr](https://www.ankr.com). Syscoin Foundation also provides this endpoint: **`wss://rpc.rollux.com/wss`.** _But it is not for production systems._
 | Contract Addresses | [link]()|
 | Chainlist | [https://chainlist.org/chain/570](https://chainlist.org/chain/570)
 
@@ -37,8 +38,8 @@ Such RPCs are either not supported, or will return nonsensical values.
 
 1. Get free access to Rollux through [Ankr](https://ankr.com)
 
-2. For small scale tests, you can use our public API:
-- HTTP endpoint: [https://rpc-tanenbaum.rollux.com](https://rpc-tanenbaum.rollux.com) (note, this is for testing. For production, use Ankr) 
+2. For small scale tests, you can use Syscoin Foundation's public Rollux RPC service:
+- HTTP endpoint: [https://rpc.rollux.com](https://rpc.rollux.com) (note, For production, use Ankr) 
 
 You can run an application for free using [Ankr](https://www.ankr.com/rpc/rollux)'s RPC and Advanced API services. Check details of [Ankr's public (free) and premium services](https://www.ankr.com/docs/rpc-service/service-plans/) to see which plan is ideal for your project.
 
@@ -57,12 +58,13 @@ This is our test network.
 | Chain ID | **`57000`** |
 | Explorer | **[https://rollux.tanenbaum.io](https://rollux.tanenbaum.io)** |
 | HTTP Endpoint | **`https://rpc-tanenbaum.rollux.com`** |
+| WSS Endpoint | **`wss://rpc-tanenbaum.rollux.com/wss`** |
 | Chainlist | [https://chainlist.org/chain/57000](https://chainlist.org/chain/57000)
 
 
 ### Contract addresses
 
-The authoritative list of testnet contract addresses is [in the monorepo](https://github.com/sidhujag/optimism/tree/develop/packages/contracts-bedrock/deployments/goerli) in their corresponding json file.
+The authoritative list of testnet contract addresses is [in the monorepo](https://github.com/sys-labs/rollux/tree/develop/packages/contracts-bedrock/deployments/goerli) in their corresponding json file.
 
 
 ### API Options
@@ -70,7 +72,7 @@ The authoritative list of testnet contract addresses is [in the monorepo](https:
 
 1. Get free access to Rollux through [Ankr](https://ankr.com)
 
-2. For small scale tests, you can use our public API provided by Syscoin Foundation:
+2. For small scale tests, you can use the public testnet RPC provided by Syscoin Foundation:
 - HTTP endpoint: [https://rpc-tanenbaum.rollux.com](https://rpc-tanenbaum.rollux.com) (note, this is for testing. For production, use Ankr) 
 
 You can run an application for free using [Ankr](https://www.ankr.com/rpc/rollux)'s RPC and Advanced API services. Check details of [Ankr's public (free) and premium services](https://www.ankr.com/docs/rpc-service/service-plans/) to see which plan is ideal for your project.

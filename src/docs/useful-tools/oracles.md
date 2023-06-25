@@ -32,7 +32,12 @@ There are two types of oracles:
 
 ## SupraOracles
 
-SupraOracles is growing fast and already supports a lot of networks, including Rollux and Syscoin. SYS Labs and Syscoin have done due diligence on Oracle providers and concluded that [SupraOracles](https://supraoracles.com) are the best to recommend, and for multiple reasons. While SupraOracles has not existed as long as ChainLink or some others, their [technology](https://supraoracles.com/whitepapers/) and approach to business are impressive.
+SupraOracles is growing fast and already supports a lot of networks, including Rollux and Syscoin. We highly recommend [SupraOracles](https://supraoracles.com), as their tech stack provides oracle service with fast finality in a more decentralized way than competitors, and with efficiency not found elsewhere. The combination of Rollux with SupraOracles means low cost near real-time oracle data! Check out SupraOracles [technology](https://supraoracles.com/whitepapers/).
+
+### SNAP (Supra Network Activate Program)
+
+SupraOracles price feeds on Rollux are subsidized by the Syscoin Foundation! This means near real-time price feeds are currently free for projects building or deploying on Rollux. The Foundation is proud to participate in the [Supra Network Activate Program (SNAP)](https://supraoracles.com/docs/supra-network-activate-program-snap).
+
 
 ### Price Feed
 
@@ -50,9 +55,6 @@ Rollux Tanenbaum: [`0xA983910583AB6b9C54e88D32512FF8aE0A56A025`](https://rollux.
 
 [Get Started with Supra VRF](https://supraoracles.com/docs/vrf1)
 
-### SNAP (Supra Network Activate Program)
-
-Apply for entry into the [Supra Network Activate Program (SNAP)](https://supraoracles.com/docs/supra-network-activate-program-snap) for subsidized and heavily discounted oracle and VRF/RNG services.
 
 
 <!---
