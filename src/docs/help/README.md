@@ -3,7 +3,7 @@ title: Rollux Help Center
 lang: en-US
 ---
 
-### Welcome to the Rollux Community Help Center! 🎉 We're excited you're part of the Rollux community.
+### Welcome! 🎉 We're excited you're part of the Rollux community.
 
 Here you will find guides and tutorials that help with the most common needs, from getting connected to Rollux to using the Rollux Portal (bridge).
 

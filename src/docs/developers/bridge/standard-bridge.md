@@ -77,9 +77,8 @@ To add your token to the standard bridge, see the guide [Adding an ERC-20 token 
 ## The Rollux token list
 
 The Standard bridge allows a one-to-many mapping between L1 and L2 tokens, meaning that there can be many Rollux implementations of an L1 token.
-However there is always a one-to-one mapping between L1 and L2 tokens in the [Optimism token list](https://github.com/ethereum-optimism/ethereum-optimism.github.io/blob/master/optimism.tokenlist.json).
-The token list is used as the source of truth for the [Rollux Portal](https://gateway.optimism.io) which is the main portal for moving assets between Layer 1 and Layer 2.
+However there is always a one-to-one mapping between L1 and L2 tokens in the [Rollux token list](https://github.com/syscoin/syscoin-rollux.github.io/tree/master/data).
+The token list is used as the source of truth for the [Rollux Portal](https://rollux.com/bridge) which is the main portal for moving assets between Layer 1 and Layer 2.
 
-If you want to have your token added to the token list, you must make a pull request against the [Optimism token list repository](https://github.com/ethereum-optimism/ethereum-optimism.github.io#adding-a-token-to-the-list).
+If you want to have your token added to the token list, you must make a pull request against the [token list repository](https://github.com/syscoin/syscoin-rollux.github.io/tree/master/data).
 You'll need the addresses for both the L1 and L2 tokens, as well as a logo for the token.
-If you're looking for an example to follow, take a look at [this simple pull request that adds a token to the token list](https://github.com/ethereum-optimism/ethereum-optimism.github.io/pull/43/files).
