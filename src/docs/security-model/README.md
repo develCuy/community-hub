@@ -14,7 +14,7 @@ SYS Labs' and Syscoin Foundation's implementation of Rollux has been carefully c
 Rollux, like Ethereum and Syscoin NEVM, is permissionless. That means anybody can deploy any smart contract code they want. Users should treat interacting with contracts on Rollux exactly as they do with Ethereum or Syscoin NEVM. In other words, they should only do so if they have good reason to trust that the application is secure.
 
 ## The Rollux Mainnet Beta security model
-Being an optimistic rollup, Rollux "piggy-backs" or inherits *external* security from the Syscoin L1. Even so, it is important to understand that Rollux is a work in progress. Improving the *internal* security guarantees that users have while using Rollux is a top priority. At the moment, it’s important to understand that the security of the Rollux blockchain is dependent on a multisig wallet managed by several anonymous individuals. This multisig wallet can be used to upgrade core Optimism smart contracts without upgrade delays.
+Being an optimistic rollup, Rollux "piggy-backs" or inherits *external* security from the Syscoin L1. Even so, it is important to understand that Rollux is a work in progress. Improving the *internal* security guarantees that users have while using Rollux is a top priority. At the moment, it’s important to understand that the security of the Rollux blockchain is dependent on a multisig wallet managed by several anonymous individuals. This multisig wallet can be used to upgrade core Rollux smart contracts without upgrade delays.
 
 ### Security Model FAQ
 
