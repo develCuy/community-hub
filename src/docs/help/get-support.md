@@ -3,7 +3,7 @@ title: Get Support
 lang: en-US
 ---
 
-Welcome to User Support! 🎉 We're excited you're part of the Rollux community.
+### We're excited you're part of the Rollux community, and happy to help!
 
 **Before reaching out for support, please view the Help Center guides and tutorials. You can also search our [Discord](https://discord.gg/rollux) to see if the answer has already been given!**
 

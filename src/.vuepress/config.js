@@ -69,7 +69,7 @@ module.exports = {
         link: '/docs/biz/'        
       },
       {
-        text: 'Security',
+        text: 'Mainnet Beta',
         link: '/docs/security-model/',
       },
       {

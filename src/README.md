@@ -14,7 +14,7 @@ features:
   - title: Mainnet Beta
     icon: shield
     details: Understand the security and liveness of the current phase of Rollux 
-    link: /docs/beta/
+    link: /docs/security-model/
 
   - title: Developer Quick Start
     icon: book
@@ -35,11 +35,6 @@ features:
     icon: info-square 
     details: What Rollux does differently
     link: /docs/key-differences/
-
-  - title: The Rollux Security Model
-    icon: shield
-    details: Understand the safety and liveness properties of Rollux
-    link: /docs/security-model/
 
   - title: Protocol Specs
     icon: ruler-triangle
