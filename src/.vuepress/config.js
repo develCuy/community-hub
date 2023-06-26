@@ -286,22 +286,15 @@ module.exports = {
           collapsable: true,
         },
         {
-          title: "Using Rollux Mainnet",
+          title: "Using the Rollux Ecosystem",
           children: [
-            '/docs/help/start-using-rollux-mainnet.md',     
-            '/docs/help/connect-pali.md',            
-            '/docs/help/connect-metamask.md',
-            '/docs/help/start-using-rollux-testnet.md'
+            '/docs/help/using-rollux-portal.md'
           ],
           collapsable: true,
         },
         {
           title: "Other Topics",
-          children: [
-            '/docs/help/start-using-rollux-mainnet.md',     
-            '/docs/help/connect-pali.md',            
-            '/docs/help/connect-metamask.md',
-            '/docs/help/start-using-rollux-testnet.md'    
+          children: [    
           ],
           collapsable: true,
         }, 

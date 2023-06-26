@@ -3,7 +3,7 @@ title: Introduction to Syscoin
 lang: en-US
 ---
 
-Rollux is fast, crazy inexpensive, and attracts a lot of attention! Once you see *why* Rollux is built on Syscoin, and get an overview of what Syscoin has to offer, we think you will be just as excited about SYS. After all, the great things Rollux provides would not be achievable without the appropriate L1 supporting it from beneath. 
+Rollux is fast, crazy inexpensive, and attracts a lot of attention! Once you get an overview of *why* Rollux is built on Syscoin, we think you will be just as excited about SYS. After all, the great things Rollux provides would not be achieved without Syscoin supporting it from beneath. 
 
 ## Syscoin in a Nutshell
 
@@ -12,7 +12,7 @@ Syscoin is designed as the ideal L1 and data availability layer for modular scal
 1. Syscoin native (UTXO, Bitcoin-based)
 2. Syscoin NEVM (Network-Enhanced Virtual Machine) which provides an EVM
 
-**Syscoin makes rollups more secure with its Bitcoin auxPoW settlement, multi-quorum finality, and efficient data availability in the form of [PoDA (Proof-of-Data-Availability)](PoDA.md).** PoDA is the very first complete L1 data availability solution ever built and deployed to a main network. Furthermore, Syscoin provides finality in the form of a multi-quorum BLS signature scheme as an enhancement on top of Nakamoto consensus which adds resistance selfish mining, and keeps the chain resilient in the face of non-final scenarios by enabling the protocol to resolve down to pure Nakamoto consensus instead of forking/stopping in those situations, unlike Ethereum's Casper.
+**Syscoin makes rollups more secure with its [Bitcoin auxPoW settlement](https://syscoin.medium.com/the-ultimate-guide-for-merged-mining-syscoin-602a151c9da2), [multi-quorum finality](Finality.md), and efficient data availability in the form of [PoDA (Proof-of-Data-Availability)](PoDA.md).** PoDA is the very first complete L1 data availability solution ever built and deployed to a main network. Furthermore, Syscoin provides finality in the form of a multi-quorum BLS signature scheme as an enhancement on top of Nakamoto consensus which adds resistance selfish mining, and keeps the chain resilient in the face of non-final scenarios by enabling the protocol to resolve down to pure Nakamoto consensus instead of forking/stopping in those situations, unlike Ethereum's Casper.
 
 **PoDA and multi-quorum finality are unique innovations of Syscoin.**
 
