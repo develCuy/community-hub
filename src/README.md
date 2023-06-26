@@ -11,14 +11,19 @@ features:
     details: Basic guides and support for connecting your wallet or using dapps
     link: /docs/help/
 
-  - title: Dev Quick Start
+  - title: Mainnet Beta
+    icon: shield
+    details: Understand the security and liveness of the current phase of Rollux 
+    link: /docs/security-model/
+
+  - title: Developer Quick Start
     icon: book
     details: How-to guides and tutorials for power users and developers
     link: /docs/guides/
 
   - title: Developer Docs
     icon: code
-    details: Resources for building a decentralized application on Rollux.
+    details: Resources for building a decentralized application on Rollux
     link: /docs/developers/
 
   - title: How Rollux Works 
@@ -30,11 +35,6 @@ features:
     icon: info-square 
     details: What Rollux does differently
     link: /docs/key-differences/
-
-  - title: The Rollux Security Model
-    icon: shield
-    details: Understand the safety and liveness properties of Rollux
-    link: /docs/security-model/
 
   - title: Protocol Specs
     icon: ruler-triangle
