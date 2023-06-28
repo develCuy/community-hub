@@ -54,7 +54,7 @@ lists of:
 The chain is composed of the following concrete contracts:
 <!-- concrete contracts stackex : -->
 
-### [`CanonicalTransactionChain`](https://github.com/sys-labs/rollux/blob/master/packages/contracts/contracts/L1/rollup/CanonicalTransactionChain.sol) (CTC)
+### [`BatchInbox`](https://github.com/SYS-Labs/rollux/blob/develop/packages/contracts-bedrock/contracts/L1/BatchInbox.sol) (CTC)
 
 The Canonical Transaction Chain (CTC) contract is an append-only log of transactions which must be applied to the OVM state. It defines the ordering of transactions by writing them to the `CTC:batches` instance of the Chain Storage Container. The CTC also allows any account to `enqueue()` an L2 transaction, which the Sequencer must  eventually append to the rollup state.
 
