@@ -12,13 +12,13 @@ This notice has two main components:
 
 1. A legal disclaimer.  Basically, it says that SYSLABS and Syscoin Foundation do not guarantee, and will not be liable for, its public contributions or those of the broader community.
 
-‍2. A list of key points for you to be aware of.  This list is intended to help you make informed decisions about your interactions with Rollux, SYS Labs, and Syscoin Foundation.
+‍2. A list of key points for you to be aware of.  This list is intended to help you make informed decisions about your interactions with Rollux, SYSLABS, and Syscoin Foundation.
 
 Again, please read this entire notice carefully. 
 ‍
 ‍
 
-ROLLUX, SYS LABS, AND SYSCOIN FOUNDATION
+ROLLUX, SYSLABS, AND SYSCOIN FOUNDATION
 
 Rollux is (an ethos, a movement, and) a public, internet-based blockchain computing platform. It is configured to inherit permissionless-ness, decentralization, and security attributes from another blockchain computing platform, Syscoin. Because of this configuration, Rollux is referred to as a “Layer 2” blockchain computing platform.
 
