@@ -42,13 +42,15 @@ To try an app on Rollux you'll need SYS to pay for transaction fees. You can dep
 There are three main options to get SYS into your wallet on Rollux:
 
 **Centralized Exchange (recommended for ease-of-use)**  
-You can buy SYS from exchanges that support the Rollux network, like [KuCoin](https://kucoin.com), [Bitmart](https://bitmart.com), [LBank](https://lbank.info), and [MEXC](https://mexc.com). When you withdraw your SYS from the exchange, select Rollux as the network you are withdrawing to and provide your wallet address that begins with "0x".
+You can buy SYS from exchanges that support the Rollux network, like [DigiFinex](https://digifinex.com). When you withdraw your SYS from the exchange, select Rollux as the network you are withdrawing to and provide your wallet address that begins with "0x".
+
+There are also a lot of exchanges that support Syscoin NEVM, Rollux's Layer 1, so you get get SYS from these too! These exchanges include: [KuCoin](https://kucoin.com), [Bitmart](https://bitmart.com), [LBank](https://lbank.info), and [MEXC](https://mexc.com). We expect many of these will support direct withdrawals to Rollux soon, but until then you can use the Portal with them, which is pretty easy! After you withdraw your SYS from these exchanges to your Syscoin NEVM wallet, you can then use the [Rollux Portal](https://rollux.com/bridge) to move your SYS to Rollux.
 
 **Bridge your SYS from Syscoin NEVM to Rollux**  
 Our official bridge is called [Rollux Portal](https://rollux.com/bridge). It makes it easy to move your SYS (or other digital assets) from Syscoin NEVM to Rollux!
 
 **By credit/debit card, Apple Pay, or other legacy payment methods**  
-Coming soon! Check back for an easy on-ramp provider.
+Coming soon! Check back for an easy on-ramp!
 
 ## You're all set!
 Made it this far? Congrats! 🎉 You now have a wallet that's funded and setup to use Rollux.
