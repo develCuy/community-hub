@@ -5,7 +5,7 @@ lang: en-US
 
 
 ## <p><center><b>COMMUNITY NOTICE</b></center></p>  
-Hi Rolluxer! Please read this entire notice carefully. It contains important legal information about Rollux Mainnet (the Syscoin layer 2 scaling protocol we help steward), SYS Labs Holdings Ltd (SYSLABS) and Syscoin Stichting (the “Foundation”), collectively referred to as "us" or "we", and other important things.
+Hi Rolluxer! Please read this entire notice carefully. It contains important legal information about Rollux Mainnet (the Syscoin layer 2 scaling protocol we help steward), SYS Labs Holdings Ltd (SYSLABS) and Syscoin Stichting (the “Foundation” or "Syscoin Foundation"), collectively referred to as "us" or "we", and other important things.
 ‍
 
 This notice has two main components:

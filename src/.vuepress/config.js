@@ -415,9 +415,10 @@ module.exports = {
       ],
       '/docs/legal/': [
 
-            '/docs/legal/data-privacy-policy.md',
+              //'/docs/legal/data-privacy-policy.md',
             '/docs/legal/community-notice-1.md',
             '/docs/legal/portal-terms.md',
+            '/docs/security-model/',
 
       ],
     }
