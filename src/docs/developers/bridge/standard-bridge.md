@@ -7,7 +7,7 @@ Certain interactions, like transferring SYS and ERC-20 tokens between the two ne
 
 The standard bridge functionality provides a method for an ERC-20 token to be deposited and locked on L1 in exchange of the same amount of an equivalent token on L2. This process is known as "bridging a token", e.g. depositing 100 USDC on L1 in exchange for 100 USDC on L2 and also the reverse - withdrawing 100 USDC on L2 in exchange for the same amount on L1. In addition to bridging tokens the standard bridge is also used for SYS.
 
-The Standard Bridge is composed of two main contracts the [`L1StandardBridge`](https://github.com/SYS-Labs/rollux/blob/master/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol) (for Layer 1) and the [`L2StandardBridge`](https://github.com/SYS-Labs/rollux/blob/master/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol) (for Layer 2).
+The Standard Bridge is composed of two main contracts the [`L1StandardBridge`](https://github.com/SYS-Labs/rollux/blob/develop/packages/contracts-bedrock/contracts/L1/L1StandardBridge.sol) (for Layer 1) and the [`L2StandardBridge`](https://github.com/SYS-Labs/rollux/blob/develop/packages/contracts-bedrock/contracts/L2/L2StandardBridge.sol) (for Layer 2).
 
 Here we'll go over the basics of using this bridge to move ERC-20 assets between Layer 1 and Layer 2.
 
@@ -25,7 +25,7 @@ If you want to deposit using a smart contract wallet and you know what you're do
 
 ### Depositing ERC20s
 
-ERC-20 deposits into L2 can be triggered via the `depositERC20` and `depositERC20To` functions on the [`L1StandardBridge`](https://github.com/SYS-Labs/rollux/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
+ERC-20 deposits into L2 can be triggered via the `depositERC20` and `depositERC20To` functions on the [`L1StandardBridge`](https://github.com/SYS-Labs/rollux/blob/develop/packages/contracts-bedrock/contracts/L1/L1StandardBridge.sol).
 You **must** approve the Standard Token Bridge to use the amount of tokens that you want to deposit or the deposit will fail.
 
 
@@ -36,6 +36,8 @@ If you send any other type of token to the standard bridge directly (not using t
 Note that if you use the [Rollux bridge UI](https://rollux.com/bridge), or the [SDK](../../sdk/js-client.md) it automatically chooses the correct bridge contract, so this problem does not happen.
 
 How to check for sure if a token can use the standard bridge:
+
+1.  The token is present in the [Rollux token list](https://github.com/syscoin/syscoin-rollux.github.io/tree/master/data), and has 
 
 "Ask" the L2 token contract by calling it. 
    ERC-20 tokens can use the standard bridge if they:
@@ -52,7 +54,7 @@ How to check for sure if a token can use the standard bridge:
 
 ### Depositing SYS
 
-SYS deposits into L2 can be triggered via the `depositETH` and `depositETHTo` functions on the [`L1StandardBridge`](https://github.com/sys-labs/rollux/blob/develop/packages/contracts/contracts/L1/messaging/L1StandardBridge.sol).
+SYS deposits into L2 can be triggered via the `depositETH` and `depositETHTo` functions on the [`L1StandardBridge`](https://github.com/SYS-Labs/rollux/blob/develop/packages/contracts-bedrock/contracts/L1/L1StandardBridge.sol).
 SYS deposits can alternatively be triggered by sending SYS directly to the `L1StandardBridge`.
 Once your deposit is detected and finalized on Rollux, your account will be funded with the corresponding amount of SYS on L2.
 
@@ -60,13 +62,13 @@ Once your deposit is detected and finalized on Rollux, your account will be fund
 
 ### Withdrawing ERC-20s
 
-ERC-20 withdrawals can be triggered via the `withdraw` or `withdrawTo` functions on the [`L2StandardBridge`](https://github.com/sys-labs/rollux/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol).
+ERC-20 withdrawals can be triggered via the `withdraw` or `withdrawTo` functions on the [`L2StandardBridge`](https://github.com/SYS-Labs/rollux/blob/develop/packages/contracts-bedrock/contracts/L2/L2StandardBridge.sol).
 If you'd like to see this contracts in action, you should check out the [L1 ⇔ L2 deposit-and-withdraw example](https://github.com/sys-labs/rollux-tutorial/tree/main/cross-dom-bridge-erc20).
 
 ### Withdrawing SYS
 
 Unlike on L1, we do not have a separate function on L2 for withdrawing SYS.
-Instead, you can use the `withdraw` or `withdrawTo` functions on the [`L2StandardBridge`](https://github.com/sys-labs/rollux/blob/develop/packages/contracts/contracts/L2/messaging/L2StandardBridge.sol) and use the address `0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000` as the L2 token address.
+Instead, you can use the `withdraw` or `withdrawTo` functions on the [`L2StandardBridge`](https://github.com/SYS-Labs/rollux/blob/develop/packages/contracts-bedrock/contracts/L2/L2StandardBridge.sol) and use the address `0xDeadDeAddeAddEAddeadDEaDDEAdDeaDDeAD0000` as the L2 token address.
 
 ## Adding an ERC-20 token to the Standard Bridge
 

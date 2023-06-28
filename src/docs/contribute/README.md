@@ -16,7 +16,7 @@ The Rollux codebase is maintained in a monorepo at [https://github.com/sys-labs/
 - Fixing and responding to existing issues. You can start off with those tagged ["good first issue"](https://github.com/sys-labs/rollux/contribute) which are meant as introductory issues for external contributors. If you don't see any, check back!
 
 ::: tip
-Following the guidelines on [Contributing](https://github.com/sys-labs/rollux/blob/master/CONTRIBUTING.md) to Rollux and Optimism's [Code of Conduct](https://github.com/ethereum-optimism/.github/blob/master/CODE_OF_CONDUCT.md) in all your interactions with the project will ensure your contributions are processed by the team.
+Following the guidelines on [Contributing](https://github.com/sys-labs/rollux/blob/develop/CONTRIBUTING.md) to Rollux and Optimism's [Code of Conduct](https://github.com/ethereum-optimism/.github/blob/master/CODE_OF_CONDUCT.md) in all your interactions with the project will ensure your contributions are processed by the team.
 :::
 
 ## Community contributions
