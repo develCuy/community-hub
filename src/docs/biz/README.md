@@ -5,7 +5,7 @@ lang: en-US
 
 Welcome! We're thrilled you're launching on Rollux. 
 
-If you haven't filled out the [get started form](https://wkf.ms/43MUo0C) please do so prior to reading this.
+If you haven't filled out the [get started form](https://forms.monday.com/forms/4727651cc1a1a9ea62402e38953f17aa?r=use1) please do so prior to reading this.
 
 We are excited for your deployment onto Rollux! 
 You will be welcomed by a great community 🫂🫂. Make sure to jump into the `#🔨│builder-general` [Discord](https://discord.gg/rollux/) channel ⚙️⚙️!
@@ -26,7 +26,7 @@ Steps to take if you would like developer support immediately, ranked in order o
 ## Marketing Requests 🦸🦸
 
 When your project is deployed on Rollux, you can be added to [our ecosystem page](https://rollux.com/ecosystem). 
-Simply [fill out this form]() to request to be included. Inclusion is at our discretion.
+Simply [fill out this form](https://forms.monday.com/forms/194655845b2bbbdecf9493eb1a40a89d?r=use1) to request to be included. Inclusion is at our discretion.
 
 ### Tweeting
 
