@@ -1,5 +1,5 @@
 ---
-title: Rollux & SYS Labs Policies, Terms, and Notices
+title: Rollux Policies, Terms, and Notices
 lang: en-US
 ---
 
@@ -10,4 +10,6 @@ Here you will find usage policies, notices, terms, and other legal documents.
 
 [Community Notice](community-notice-1.md)  
 
-[Rollux Portal Terms & Conditions](portal-terms.md)
+[Rollux Portal Terms & Conditions](portal-terms.md)  
+
+[Rollux Mainnet Beta status](../security-model/)
