@@ -1,9 +1,9 @@
-### Outdated
-
 ---
 title: Running a testnet or mainnet node
 lang: en-US
 ---
+
+# This information is currently outdated. It applies to a deprecated version of Rollux. Check back for an updated version. Until then, reach out to the Rollux team directly for the correct instructions.
 
 If you're looking to build an app on Rollux you'll need access to a Rollux node. You have two options - use a hosted node from providers like Ankr or run your own. 
 
