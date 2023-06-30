@@ -3,7 +3,7 @@ title: Running a local development environment
 lang: en-US
 ---
 
-# This information is currently outdated. It applies to a deprecated version of Rollux. Check back for an updated version. Until then, reach out to the Rollux team directly for the correct instructions.
+## This information is currently outdated and applies to a deprecated version of Rollux. Check back for an updated version. Until then, reach out to the Rollux team directly for the correct instructions.
 
 ## What is this?
 
