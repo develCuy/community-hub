@@ -7,7 +7,7 @@ lang: en-US
 
 #### Rollux Tanenbaum
 
-[Syscoin Name Service](https://sysdomains.xyz/rollux-faucet) is an easy way to get Test SYS on Rollux Tanenbaum directly.
+[Syscoin Name Service](https://rollux.id/faucet) is an easy way to get Test SYS on Rollux Tanenbaum directly.
 
 #### Request Tanenbaum SYS in Rollux Discord
 
@@ -20,4 +20,4 @@ Syscoin Foundation offers an [L1 testnet faucet](https://faucet.tanenbaum.io) fo
 
 ## Mainnet Faucets
 
-Syscoin Foundation offers an [L1 mainnet faucet](https://faucet.syscoin.org) that provides a very small amount of SYS that can cover a basic gas fee. This is a social media authenticated faucet. You can bridge this SYS from NEVM to Rollux using the [Rollux Portal](https://bridge.syscoin.org).
+Syscoin Foundation offers an [L1 mainnet faucet](https://faucet.syscoin.org) that provides a very small amount of SYS that can cover a basic gas fee. This is a social media authenticated faucet. You can bridge this SYS from NEVM to Rollux using the [Rollux Portal](https://bridge.rollux.com).
