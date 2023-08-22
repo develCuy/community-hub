@@ -1,7 +1,7 @@
 {
-  "name": "optimism-hub",
+  "name": "rollux-hub",
   "version": "0.0.2",
-  "description": "The Optimism Community Hub",
+  "description": "The Rollux Community Hub",
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev src",
